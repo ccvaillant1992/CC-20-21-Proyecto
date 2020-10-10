@@ -5,9 +5,9 @@ Este documento abarca los pasos seguidos para la preparación del entorno de tra
 
 ## Creación de los repositorios
 
-- [Fork del Repositorio de Cloud Computing 20-21](https://github.com/ccvaillant1992/CC-20-21):  
+- [Fork del Repositorio de Cloud Computing 20-21](https://github.com/ccvaillant1992/CC-20-21): Fork realizado al repositorio de la asignatura de Cloud Computing a mi cuenta de github  
 - [Repositorio del Proyecto](https://github.com/ccvaillant1992/CC-20-21-Proyecto): Muestra el avance del proyecto para el despliegue de la aplicación a desarrollar en diferentes hitos  
-- [Repositorio de Ejercicios](): Repositorio de los ejercicios orientados por tema en la asignatura Cloud Computing 
+- [Repositorio de Ejercicios](https://github.com/ccvaillant1992/CC-20-21-Ejercicios): Repositorio de los ejercicios orientados por tema en la asignatura Cloud Computing 
 
 ## Creación de claves y subida de clave pública a GitHub
 
@@ -41,7 +41,23 @@ Como segunda forma de autenticación para GitHub, enviar un código como mensaje
 
 ## Configuración de los remotos
 
+Mantener la copia actualizada con el repositorio original. Para ello, definir un repositorio *upstream* de
+
 ```
+$ git remote add upstream https://github.com/JJ/CC-20-21.git
+
+```
+
+y antes de trabajar con el *fork* local del repositorio hacer
+
+```
+$ git pull upstream master --rebase
+
+```
+Listar las conexiones remotas configuradas de otros repositorios.
+
+```
+
 $ git remote -v
 
 ```
