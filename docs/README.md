@@ -1,1 +1,0 @@
-# Repo para documentos adicionales
