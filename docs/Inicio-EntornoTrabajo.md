@@ -5,8 +5,8 @@ Este documento abarca los pasos seguidos para la preparación del entorno de tra
 
 ## Creación de los repositorios
 
-- [Fork del Repositorio de Cloud Computing 20-21]():  
-- [Repositorio del Proyecto](): Muestra el avance del proyecto para el despliegue de la aplicación a desarrollar en diferentes hitos  
+- [Fork del Repositorio de Cloud Computing 20-21](https://github.com/ccvaillant1992/CC-20-21):  
+- [Repositorio del Proyecto](https://github.com/ccvaillant1992/CC-20-21-Proyecto): Muestra el avance del proyecto para el despliegue de la aplicación a desarrollar en diferentes hitos  
 - [Repositorio de Ejercicios](): Repositorio de los ejercicios orientados por tema en la asignatura Cloud Computing 
 
 ## Creación de claves y subida de clave pública a GitHub
@@ -17,7 +17,7 @@ Generar una nueva clave SSH para usar para la autenticación y luego agregarla a
 
 Para usar la clave SSH nueva generada, también agregar a la cuenta de GitHub.
 
-![addkeys](./img/addkeys.png)
+![addKeys](./img/addkeys.png)
 
 ## Configuración de nombre y correo electrónico para que apareza en los commits
 
