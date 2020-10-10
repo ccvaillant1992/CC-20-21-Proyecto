@@ -4,7 +4,7 @@ Este repositorio contiene toda la documentación relacionada a la realización d
 
 También se irá abordando la resolución de ejercicios orientados por cada tema de la asignatura que servirán de apoyo al desarrollo de este proyecto. Estos ejercicios se pueden encontrar en el siguiente [enlace](https://github.com/ccvaillant1992/CC-20-21-Ejercicios) 
 
-Además, con el objetivo se seguir las buenas prácticas para el correcto uso de las herramientas git y github, se ha configurado inicialmente el entorno de trabajo. Un detalle de los pasos realizados se pueden encontrar en este [enlace](https://github.com/ccvaillant1992/CC-20-21-Proyecto/blob/master/docs/Inicio-EntornoTrabajo.md) 
+Además, con el objetivo de seguir las buenas prácticas para el correcto uso de las herramientas git y github, se ha configurado inicialmente el entorno de trabajo. Un detalle de los pasos realizados se pueden encontrar en este [enlace](https://github.com/ccvaillant1992/CC-20-21-Proyecto/blob/master/docs/Inicio-EntornoTrabajo.md) 
 
 ## Acerca del proyecto
 
