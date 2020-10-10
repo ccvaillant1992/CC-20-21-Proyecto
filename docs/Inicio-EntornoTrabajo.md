@@ -17,7 +17,7 @@ Generar una nueva clave SSH para usar para la autenticación y luego agregarla a
 
 Para usar la clave SSH nueva generada, también agregar a la cuenta de GitHub.
 
-![addKeys](./img/addkeys.png)
+![addKeys](./img/addKeys.png)
 
 ## Configuración de nombre y correo electrónico para que apareza en los commits
 
