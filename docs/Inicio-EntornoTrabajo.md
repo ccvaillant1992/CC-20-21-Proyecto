@@ -45,6 +45,7 @@ Mantener la copia actualizada con el repositorio original. Para ello, definir un
 
 ```
 $ git remote add upstream https://github.com/JJ/CC-20-21.git
+$ git remote add origin git@github.com:ccvaillant1992/CC-20-21-Proyecto.git
 
 ```
 
