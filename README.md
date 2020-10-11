@@ -8,7 +8,7 @@ Además, con el objetivo de seguir las buenas prácticas para el correcto uso de
 
 ## Acerca del proyecto
 
-La aplicación Cultura e Identidad es una tienda online que vende varios productos incluyendo souvenirs, disfraces para personas que desean visitar las fiestas de mayor tradición e historia en algún país elegidoy quieren comprar algún producto relacionado con el evento.
+La aplicación Cultura e Identidad es una tienda online que vende varios productos incluyendo souvenirs, disfraces para personas que desean visitar las fiestas de mayor tradición e historia en algún país elegido y quieren comprar algún producto relacionado con el evento.
 
 Al mismo tiempo cada evento explica sobre la cultura e identidad de dicho país elegido y además de brindarle conocimiento a los clientes sobre la tradición cultural del país, también sus costumbres, sus características fundamentales que lo hacen único.
 
