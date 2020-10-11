@@ -8,15 +8,19 @@ Además, con el objetivo de seguir las buenas prácticas para el correcto uso de
 
 ## Acerca del proyecto
 
-La aplicación Cultura e Identidad Es una tienda online orientada a personas de cualquier parte del mundo que van a viajar en primer momento a un país de América Latina. Personas que desean visitar las fiestas de mayor tradición e historia en el país elegido y quieren reservar el alquiler de algún disfraz relacionado con el evento para acompañar en el viaje a su destino turístico.
-Al mismo tiempo cada evento explica sobre la cultura e identidad de dicho país de destino y además de brindarle conocimiento a los clientes sobre la tradición cultural del país, también sus costumbres, sus características fundamentales que lo hacen único.
+La aplicación Cultura e Identidad es una tienda online que vende varios productos incluyendo souvenirs, disfraces para personas que desean visitar las fiestas de mayor tradición e historia en algún país elegidoy quieren comprar algún producto relacionado con el evento.
 
-Esta aplicación permitirá a los clientes la reserva de alquiler de un disfraz para algún evento elegido y acceder a consultar los disfraces alquilados.
+Al mismo tiempo cada evento explica sobre la cultura e identidad de dicho país elegido y además de brindarle conocimiento a los clientes sobre la tradición cultural del país, también sus costumbres, sus características fundamentales que lo hacen único.
 
 Ejemplo de eventos:
 
 - Cuba- Carnavales de la Habana
+Agosto es el mes escogido para el Carnaval de La Habana, uno de los eventos de mayor tradición e historia del país. El famoso desfile por el Malecón de emblemáticas y contemporáneas comparsas, seguidas por el movimiento arrasador del pueblo.
+
 - México- Desfile Día de los muertos
-- Brazil- Carnaval de Río de Janeiro
+El Día de Muertos es una celebración tradicional mexicana que honra a los muertos. Tiene lugar los días 1 y 2 de noviembre y está vinculada a las celebraciones católicas de Día de los Fieles Difuntos y Todos los Santos.
+
+- Brasil- Carnaval de Río de Janeiro 
+Una de las mayores manifestaciones de la cultura carioca, que llena de música y color las calles de la ciudad durante una semana y que tiene su punto culminante en el espectacular desfile de la Escuelas de Samba que se lleva a cabo en el Sambódromo. La fecha exacta varía entre febrero y marzo.
 
 
