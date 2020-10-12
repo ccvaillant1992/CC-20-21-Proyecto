@@ -1,6 +1,6 @@
 # Preparación inicial del entorno de trabajo  
 
-Este documento abarca los pasos seguidos para la preparación del entorno de trabajo con las herramientas git y github, con el objetivo de usar el repositorio de forma correcta para el desarrollo del proyecto dela asignatura Cloud Computing.
+Este documento abarca los pasos seguidos para la preparación del entorno de trabajo con las herramientas  git y github, con el objetivo de usar el repositorio de forma correcta para el desarrollo del proyecto dela asignatura Cloud Computing.
 
 
 ## Creación de los repositorios
