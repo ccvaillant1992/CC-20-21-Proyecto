@@ -1,6 +1,6 @@
 # CC-20-21-Proyecto
 
-Este repositorio contiene toda la documentación relacionada a la realización del proyecto de la asignatura Cloud Computing para el despliegue del mismo a través de los diferentes hitos planteados a lo largo del desarrollo del mismo. 
+Este repositorio contiene toda la documentación relacionada a la realización del proyecto de la asignatura Cloud Computing para el despliegue del mismo a través de ls diferentes prácticas planteados a lo largo del desarrollo de las mismas. 
 
  También se irá abordando la resolución de ejercicios orientados por cada tema de la asignatura que servirán de apoyo al desarrollo de este proyecto. Estos ejercicios se pueden encontrar en el siguiente [enlace](https://github.com/ccvaillant1992/CC-20-21-Ejercicios) 
 
