@@ -5,7 +5,7 @@ Este documento abarca los pasos seguidos para la preparación del entorno de tra
 
 ## Creación de los repositorios
 
-- [Fork del Repositorio de Cloud Computing 20-21](https://github.com/ccvaillant1992/CC-20-21): Fork realizado al repositorio de la asignatura de Cloud Computing a mi cuenta de github  
+- [Fork del Repositorio de Cloud Computing 20-21](https://github.com/ccvaillant1992/CC-20-21): Fork  realizado al repositorio de la asignatura de Cloud Computing a mi cuenta de github  
 - [Repositorio del Proyecto](https://github.com/ccvaillant1992/CC-20-21-Proyecto): Muestra el avance del proyecto para el despliegue de la aplicación a desarrollar en diferentes hitos  
 - [Repositorio de Ejercicios](https://github.com/ccvaillant1992/CC-20-21-Ejercicios): Repositorio de los ejercicios orientados por tema en la asignatura Cloud Computing 
 
