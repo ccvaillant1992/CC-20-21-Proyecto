@@ -18,7 +18,7 @@ Ejemplo de eventos:
 Agosto es el mes escogido para el Carnaval de La Habana, uno de los eventos de mayor tradición e historia del país. El famoso desfile por el Malecón de emblemáticas y contemporáneas comparsas, seguidas por el movimiento arrasador del pueblo.
 
 - México- Desfile Día de los muertos
-El Día de Muertos es una celebración tradicional mexicana que honra a los muertos. Tiene lugar los días 1 y 2 de noviembre y está vinculada a las celebraciones católicas de Día de los Fieles Difuntos y Todos los Santos.
+El  Día de Muertos es una celebración tradicional mexicana que honra a los muertos. Tiene lugar los días 1 y 2 de noviembre y está vinculada a las celebraciones católicas de Día de los Fieles Difuntos y Todos los Santos.
 
 - Brasil- Carnaval de Río de Janeiro 
 Una de las mayores manifestaciones de la cultura carioca, que llena de música y color las calles de la ciudad durante una semana y que tiene su punto culminante en el espectacular desfile de la Escuelas de Samba que se lleva a cabo en el Sambódromo. La fecha exacta varía entre febrero y marzo.
