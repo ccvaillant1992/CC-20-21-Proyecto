@@ -1,4 +1,4 @@
-# CC-20-21-Proyecto
+# UniTradicional  
 
 Este repositorio contiene toda la documentación relacionada a la realización del proyecto de la asignatura Cloud Computing para el despliegue del mismo a través de ls diferentes prácticas planteados a lo largo del desarrollo de las mismas. 
 
@@ -8,19 +8,9 @@ Este repositorio contiene toda la documentación relacionada a la realización d
 
 ## Acerca del proyecto
 
-La aplicación Cultura e Identidad es una tienda online que vende varios productos incluyendo souvenirs, disfraces para personas que desean visitar las fiestas de mayor tradición e historia en algún país elegido y quieren comprar algún producto relacionado con el evento.
+La aplicación UniTradicional es una tienda online que vende combos de disfraces asociados a eventos relacionados con las fiestas de mayor tradición e historia en algún país elegido por el cliente.
 
-Al mismo tiempo cada evento explica sobre la cultura e identidad de dicho país elegido y además de brindarle conocimiento a los clientes sobre la tradición cultural del país, también sus costumbres, sus características fundamentales que lo hacen único.
-
-Ejemplo de eventos:
-
-- Cuba- Carnavales de la Habana
-Agosto es el mes escogido para el Carnaval de La Habana, uno de los eventos de mayor tradición e historia del país. El famoso desfile por el Malecón de emblemáticas y contemporáneas comparsas, seguidas por el movimiento arrasador del pueblo.
-
-- México- Desfile Día de los muertos
-El Día de Muertos es una celebración tradicional mexicana que honra a los muertos. Tiene lugar los días 1 y 2 de noviembre y está vinculada a las celebraciones católicas de Día de los Fieles Difuntos y Todos los Santos.
-
-- Brasil- Carnaval de Río de Janeiro 
-Una de las mayores manifestaciones de la cultura carioca, que llena de música y color las calles de la ciudad durante una semana y que tiene su punto culminante en el espectacular desfile de la Escuelas de Samba que se lleva a cabo en el Sambódromo. La fecha exacta varía entre febrero y marzo.
-
+- En el sitio web de la tienda los clientes pueden ver los diferentes eventos ofrecidos en el catálogo y filtrar por categorías (hombre, mujer, niño)
+- Los clientes pueden chequear los detalles de los eventos, seleccionar el combo de disfraz deseado para cada evento y ordenar la compra.
+- Los combos de disfraces son colocados en una cesta de compra y cuando es realizada la compra los usuarios pueden pagar por el combo deseado en la cesta.
 
