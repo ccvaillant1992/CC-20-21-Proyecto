@@ -8,6 +8,8 @@ Las piezas de funcionalidad como parte de la aplicación son:
 
 Cada una de las características anteriores se administra con un microservicio distinto. Cada microservicio es autónomo, se puede implementar de forma independiente y es responsable de sus propios datos.
 
+![Arquitectura](./img/Arquitectura.png)
+
 Por tanto, existen requerimientos no funcionales para esta aplicación que justifican la elección de esta arquitectura basada en microservicios: 
 - Escalabilidad flexible: Los eventos se van ordenando en el catálogo de servicios conforme se esté acercando la fecha de celebración, ciertos combos de disfraces son enormemente demandados, especialmente durante estas fechas. Esta es la razón por la cual UniTradicional necesita poder ser escalada de forma flexible.
 Además, no se quiere pagar por recursos de cómputo en un día lento, pero se necesita alta disponibilidad en en día ocupado y una parte de la aplicación que recibe la carga alta debería poder se escalada cuando sea necesario.
