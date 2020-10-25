@@ -21,7 +21,7 @@ La Tienda utiliza una arquitectura de microservicios basada en ASP.NET Core. Las
 - Lenguajes: Para el desarrollo de los microservicios se empleará lenguage c# y como framework ASP NetCore 3.1
 - Almacenamiento: Para el almacenamiento de los datos en el microservico de catálogo se usuará una base de datos SQL y para el microservicio de orden, la base de datos en memoria redis
 - Comunicación: Los microservicios se comunicarán mediante envío de mensajes empleando el servicio Event Hub con RabbitMQ.
-- Test: Para el desarrollo basado en test se implementarán distintas pruebas para todos los microservicios usando 
+- Test: Para el desarrollo basado en test se implementarán distintas pruebas para todos los microservicios usando la herramienta dotnet test 
 - Servicios: Se usará el servicio de Log Analytics Workspace como centralizador de log de los microservicios.
 
 ## Licencia a utilizar en el proyecto
