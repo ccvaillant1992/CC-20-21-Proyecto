@@ -12,8 +12,9 @@ Cada una de las características anteriores se administra con un microservicio d
 
 Esta arquitectura permite que cada microservicio implemente el almacén de datos que esté mejor optimizado para su carga de trabajo, necesidades de almacenamiento y patrones de lectura-escritura. Las opciones de almacenamiento de datos incluyen relacional y clave-valor.
 El servicio de catálogo al igual que el servicio de pago, almacenan sus datos en una base de datos SQL Server. El servicio de carrito de compra utiliza una cache de Redis para almacenamiento. No existe un único almacén de datos con el que interactúen todos los servicios. En cambio, la comunicación entre servicios se produce según sea necesario, ya sea a través de llamadas API de forma asíncrona y a través de mensajería. Este aislamiento de datos le da a cada servicio la autonomía para aplicar de forma independiente las actualizaciones del esquema de datos, sin romper otros servicios en el entorno de producción.
+También, utiliza un bus de eventos para mensajería asincrónica y comunicación basada en eventos, empleando para ello, el patrón de publicación / suscripción (comúnmente abreviado como pub-sub) que se usa con el bus de eventos. Cualquier servicio puede publicar un evento en el bus de eventos. Cada servicio es responsable de suscribirse a los mensajes relevantes para su dominio. 
 
-A continuación, el diagrama de arquitectura empleado
+A continuación, el diagrama de arquitectura empleado:
 ![Arquitectura](./img/Arquitectura.png)
 
 También existen requerimientos no funcionales para esta aplicación que justifican la elección de esta arquitectura basada en microservicios:
