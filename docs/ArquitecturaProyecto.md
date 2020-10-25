@@ -24,3 +24,5 @@ Además, no se quiere pagar por recursos de cómputo en un día lento, pero se n
 - Implementación de entrega continua de forma independiente, equipos separados y fácil de expandir: Cada parte de la aplicación debería poder ser implementada de forma independiente del resto de las partes usando despliegue continuo. Una de las razones es que cada parte pueda ser separada en equipos con diferentes localizaciones trabajando cada parte a su medida. Debe proporcionar la facilidad para añadir funcionalidades nuevas.
 - De confianza: Es una aplicación debe generar confianza y motivación a los clientes. Se busca la felicidad en los clientes. Por tanto, cuando accedan a la compra de algún combo de disfraz debe de haber la menos posibilidad de perder alguna información
 
+[Referencia Documentación Microsoft Empleada](https://docs.microsoft.com/es-es/dotnet/architecture/microservices/)
+
