@@ -5,7 +5,7 @@ La Tienda utiliza una arquitectura basada en ASP.NET Core microservicios. Las so
 Las piezas de funcionalidad como parte de la aplicación son:
 
 - Catálogo de eventos
-- Carrito de compra
+- Orden de compra
 - Servicio de pago
 
 Cada una de las características anteriores se administra con un microservicio distinto. Cada microservicio es autónomo, se puede implementar de forma independiente y es responsable de sus propios datos.
