@@ -16,3 +16,7 @@ La Tienda utiliza una arquitectura de microservicios basada en ASP.NET Core. Las
 
 [Descripción más detallada Arquitectura](https://github.com/ccvaillant1992/CC-20-21-Proyecto/blob/master/docs/ArquitecturaProyecto.md)
 
+## Licencia a utilizar en el proyecto
+
+- GNU General Public License v3.0
+
