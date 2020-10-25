@@ -10,10 +10,9 @@ La aplicación UniTradicional es una tienda online que vende combos de disfraces
 - Los clientes pueden chequear los detalles de los eventos, seleccionar el combo de disfraz deseado para cada evento y ordenar la compra.
 - Los combos de disfraces son colocados en una cesta de compra y cuando es realizada la compra los usuarios pueden pagar por el combo deseado en la cesta.
 
-[Historias de Usuario](
-)
-## Arquitectura del proyecto
+[Historias de Usuario](https://github.com/ccvaillant1992/CC-20-21-Proyecto/blob/master/docs/HistoriasUsuario.md)
 
+## Arquitectura del proyecto
 
 [Documentación Arquitectura]()
 
