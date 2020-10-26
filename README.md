@@ -16,6 +16,7 @@ Las Historias de Usuario definidas:
 - [Como cliente, quiero ver los eventos disponibles en el Catálogo de eventos para obtener detalle de los combos de disfraces suministrándole al sistema la categoría (hombre, mujer o niño) a filtrar](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/14)
 - [Como cliente, quiero seleccionar un combo de disfraz para añadir una orden de compra a la cesta de compra](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/15)
 - [Como cliente, quiero visualizar mi cesta de compra para realizar el pago de los combos de disfraces ordenados por mi](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/16)
+- [Como cliente quiero ver detalle de los combos de disfraces cuando haya seleccionado un evento](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/19)
 - [Como Administrador del sitio quiero actualizar el catálogo de eventos](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/17)
 - [Como Administrador del sitio quiero añadir combos de disfraces en venta a los eventos disponibles](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/18)
 
