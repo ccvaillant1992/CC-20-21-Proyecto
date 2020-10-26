@@ -13,12 +13,34 @@ La aplicación UniTradicional es una tienda online que vende combos de disfraces
 
 Las Historias de Usuario definidas:
 
-- [Como cliente, quiero ver los eventos disponibles en el Catálogo de eventos para obtener detalle de los combos de disfraces suministrándole al sistema la categoría (hombre, mujer o niño) a filtrar](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/14)
-- [Como cliente, quiero seleccionar un combo de disfraz para añadir una orden de compra a la cesta de compra](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/15)
-- [Como cliente, quiero visualizar mi cesta de compra para realizar el pago de los combos de disfraces ordenados por mi](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/16)
-- [Como cliente quiero ver detalle de los combos de disfraces cuando haya seleccionado un evento](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/19)
-- [Como Administrador del sitio quiero actualizar el catálogo de eventos](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/17)
-- [Como Administrador del sitio quiero añadir combos de disfraces en venta a los eventos disponibles](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/18)
+- [Como cliente, quiero ver combos disponibles para un evento](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/14)
+- [Como cliente, quiero visualizar el listado de eventos disponibles en el sistema](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/15)
+- [Como cliente, quiero visualizar elementos añadidos al carrito de compra](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/16)
+- [Como Administrador del sitio quiero añadir un evento nuevo](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/17)
+- [Como Administrador del sitio quiero añadir un nuevo combo a un evento](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/18)
+- [Como cliente quiero ver detalle de un combo de disfraz](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/19)
+- [Como cliente quiero filtrar combo por categoría](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/20)
+- [Como cliente quiero añadir combo al carrito de compra](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/21)
+- [Como cliente quiero realizar pago de un combo](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/22)
+
+
+## Las Clases a utilizar en el proyecto
+
+Evento(Entidad principal)
+
+- Id
+- descripción
+- País
+- Nombre
+
+Combo
+
+- Id
+- IdEvento
+- Precio
+- Categoría
+- Nombre
+
 
 ## Arquitectura del proyecto
 La Tienda utiliza una arquitectura de microservicios basada en ASP.NET Core. Las solicitudes HTTP de los clientes a la aplicación web de la tienda para que pueden acceder a los microservicios se enrutan a través de una puerta de enlace API, que es una implementación de Backens-For-Frontends. Las puertas de enlace API mejoran la seguridad y desacoplan los servicios backend de los clientes individuales.
