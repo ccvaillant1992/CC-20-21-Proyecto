@@ -19,7 +19,7 @@ Las Historias de Usuario definidas:
 - [Como Administrador del sitio quiero añadir un evento nuevo](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/17)
 - [Como Administrador del sitio quiero añadir un nuevo combo a un evento](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/18)
 - [Como cliente quiero ver detalle de un combo de disfraz](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/19)
-- [Como cliente quiero filtrar combo por categoría](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/20)
+- [Como cliente quiero filtrar combos por categoría](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/20)
 - [Como cliente quiero añadir combo al carrito de compra](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/21)
 - [Como cliente quiero realizar pago de un combo](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/22)
 
