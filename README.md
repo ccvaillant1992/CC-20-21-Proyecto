@@ -12,11 +12,12 @@ La aplicación UniTradicional es una tienda online que vende combos de disfraces
 ## Historias de Usuario
 
 Las Historias de Usuario definidas:
-[Como cliente, quiero ver los eventos disponibles en el Catálogo de eventos para obtener detalle de los combos de disfraces suministrándole al sistema la categoría (hombre, mujer o niño) a filtrar](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/11)
-[Como cliente, quiero seleccionar un combo de disfraz para añadir una orden de compra a la cesta de compra](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/13)
-[Como cliente, quiero visualizar mi cesta de compra para realizar el pago de los combos de disfraces ordenados por mi]()
-[Como Administrador del sitio quiero actualizar el catálogo de eventos]()
-[Como Administrador del sitio quiero añadir combos de disfraces en venta a los eventos disponibles]()
+
+- [Como cliente, quiero ver los eventos disponibles en el Catálogo de eventos para obtener detalle de los combos de disfraces suministrándole al sistema la categoría (hombre, mujer o niño) a filtrar](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/11)
+- [Como cliente, quiero seleccionar un combo de disfraz para añadir una orden de compra a la cesta de compra](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/13)
+- [Como cliente, quiero visualizar mi cesta de compra para realizar el pago de los combos de disfraces ordenados por mi]()
+- [Como Administrador del sitio quiero actualizar el catálogo de eventos]()
+- [Como Administrador del sitio quiero añadir combos de disfraces en venta a los eventos disponibles]()
 
 ## Arquitectura del proyecto
 La Tienda utiliza una arquitectura de microservicios basada en ASP.NET Core. Las solicitudes HTTP de los clientes a la aplicación web de la tienda para que pueden acceder a los microservicios se enrutan a través de una puerta de enlace API, que es una implementación de Backens-For-Frontends. Las puertas de enlace API mejoran la seguridad y desacoplan los servicios backend de los clientes individuales.
