@@ -12,6 +12,6 @@ namespace Catalogo.Models
         public DateTime Date { get; set; }
         public string Description { get; set; }
         public string Pais { get; set; }
-        public List<Evento> Events { get; set; }
+        public List<Combo> combos { get; set; }
     }
 }
