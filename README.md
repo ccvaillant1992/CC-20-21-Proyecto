@@ -26,7 +26,7 @@ Las Historias de Usuario definidas:
 
 ## Las Clases a utilizar en el proyecto
 
-[Evento](https://github.com/ccvaillant1992/CC-20-21-Proyecto/blob/master/CatalogoMicroservice/Catalogo/Models/Evento.cs):Entidad principal
+[Evento](https://github.com/ccvaillant1992/CC-20-21-Proyecto/blob/master/CatalogoMicroservice/Catalogo/Models/Evento.cs) :Entidad principal
 
 - EventId
 - Descripción
