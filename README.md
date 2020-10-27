@@ -26,16 +26,18 @@ Las Historias de Usuario definidas:
 
 ## Las Clases a utilizar en el proyecto
 
-Evento(Entidad principal)
+[Evento](https://github.com/ccvaillant1992/CC-20-21-Proyecto/blob/master/CatalogoMicroservice/Catalogo/Models/Evento.cs):Entidad principal
 
-- Id
-- descripción
+- EventId
+- Descripción
 - País
 - Nombre
+- Date 
+- Combos 
 
-Combo
+[Combo](https://github.com/ccvaillant1992/CC-20-21-Proyecto/blob/master/CatalogoMicroservice/Catalogo/Models/Combo.cs)
 
-- Id
+- ComboId
 - IdEvento
 - Precio
 - Categoría
