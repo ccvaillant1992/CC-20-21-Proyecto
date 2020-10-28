@@ -13,15 +13,15 @@ La aplicación UniTradicional es una tienda online que vende combos de disfraces
 
 Las Historias de Usuario definidas:
 
-- [Como cliente, quiero ver combos disponibles para un evento](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/14)
-- [Como cliente, quiero visualizar el listado de eventos disponibles en el sistema](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/15)
-- [Como cliente, quiero visualizar elementos añadidos al carrito de compra](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/16)
-- [Como Administrador del sitio quiero añadir un evento nuevo](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/17)
-- [Como Administrador del sitio quiero añadir un nuevo combo a un evento](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/18)
-- [Como cliente quiero ver detalle de un combo de disfraz](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/19)
-- [Como cliente quiero filtrar combos por categoría](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/20)
-- [Como cliente quiero añadir combo al carrito de compra](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/21)
-- [Como cliente quiero realizar pago de un combo](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/22)
+- [Como cliente, necesito poder ver combos disponibles para un evento específico](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/14)
+- [Como cliente, necesito poder visualizar el listado de los eventos disponibles en el sistema](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/15)
+- [Como cliente, necesito poder visualizar los elementos añadidos al carrito de compra](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/16)
+- [Como Administrador de la aplicación, necesito poder añadir un evento nuevo al sistema](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/17)
+- [Como Administrador de la aplicación, necesito añadir un nuevo combo a un evento determinado](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/18)
+- [Como cliente, necesito poder ver el detalle de un combo de disfraz](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/19)
+- [Como cliente, necesito poder filtrar los combos por categoría](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/20)
+- [Como cliente, necesito poder añadir un combo al carrito de compra](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/21)
+- [Como cliente, necesito poder realizar el pago de un combo determinado](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/22)
 
 
 ## Las Clases a utilizar en el proyecto
