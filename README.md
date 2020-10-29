@@ -11,7 +11,7 @@ La aplicación UniTradicional es una tienda online que vende combos de disfraces
 
 ## Historias de Usuario
 
-Las Historias de Usuario definidas:
+A continuación, las historias de usuario descritas como parte de cada una de las funcionalidades que contendrá la aplicación UniTradicional:
 
 - [Como cliente, necesito poder ver combos disponibles para un evento específico](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/14)
 - [Como cliente, necesito poder visualizar el listado de los eventos disponibles en el sistema](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/15)
@@ -24,7 +24,7 @@ Las Historias de Usuario definidas:
 - [Como cliente, necesito poder realizar el pago de un combo determinado](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/22)
 
 
-## Las Clases a utilizar en el proyecto
+## Los Modelos de las clases a utilizar en el proyecto
 
 [Evento](https://github.com/ccvaillant1992/CC-20-21-Proyecto/blob/master/CatalogoMicroservice/Catalogo/Models/Evento.cs) :Entidad principal
 
