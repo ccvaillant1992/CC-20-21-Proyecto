@@ -23,6 +23,12 @@ A continuación, las historias de usuario descritas como parte de cada una de la
 - [Como cliente, necesito poder añadir un combo al carrito de compra](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/21)
 - [Como cliente, necesito poder realizar el pago de un combo determinado](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/22)
 
+##Para el desarrollo y avance de este Proyecto, a continuación los siguientes Milestone y la breve decripción de lo que abarca cada uno:
+- [UniTradicional Hito 1](https://github.com/ccvaillant1992/CC-20-21-Proyecto/milestone/5): Tareas relacionadas al Hito #1 del proyecto
+- [Catálogo](https://github.com/ccvaillant1992/CC-20-21-Proyecto/milestone/10): Tareas relacionadas a la gestión de eventos y combos
+- [Órdenes de compra](https://github.com/ccvaillant1992/CC-20-21-Proyecto/milestone/7): Tareas relacionadas al manejo del carrito de compra
+- [Catálogo](https://github.com/ccvaillant1992/CC-20-21-Proyecto/milestone/10): Tareas relacionadas a la gestión de eventos y combos
+- [Test](https://github.com/ccvaillant1992/CC-20-21-Proyecto/milestone/12): Tareas relacionadas al desarrollo de pruebas unitarias
 
 ## Los Modelos de las clases a utilizar en el proyecto
 
