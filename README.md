@@ -28,6 +28,7 @@ A continuación, las historias de usuario descritas como parte de cada una de la
 - [Catálogo](https://github.com/ccvaillant1992/CC-20-21-Proyecto/milestone/10): Tareas relacionadas a la gestión de eventos y combos
 - [Órdenes de compra](https://github.com/ccvaillant1992/CC-20-21-Proyecto/milestone/7): Tareas relacionadas al manejo del carrito de compra
 - [Test](https://github.com/ccvaillant1992/CC-20-21-Proyecto/milestone/12): Tareas relacionadas al desarrollo de pruebas unitarias
+- [Despliegue de Infraestructura](https://github.com/ccvaillant1992/CC-20-21-Proyecto/milestone/13): Tareas Relacionadas al despliegue de la Infraestructura planteada en el proyecto
 
 ## Los Modelos de las clases a utilizar en el proyecto
 
