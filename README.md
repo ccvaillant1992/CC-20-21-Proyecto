@@ -27,7 +27,6 @@ A continuación, las historias de usuario descritas como parte de cada una de la
 - [UniTradicional Práctica 1](https://github.com/ccvaillant1992/CC-20-21-Proyecto/milestone/5): Tareas relacionadas a la práctica #1 del proyecto
 - [Catálogo](https://github.com/ccvaillant1992/CC-20-21-Proyecto/milestone/10): Tareas relacionadas a la gestión de eventos y combos
 - [Órdenes de compra](https://github.com/ccvaillant1992/CC-20-21-Proyecto/milestone/7): Tareas relacionadas al manejo del carrito de compra
-- [Catálogo](https://github.com/ccvaillant1992/CC-20-21-Proyecto/milestone/10): Tareas relacionadas a la gestión de eventos y combos
 - [Test](https://github.com/ccvaillant1992/CC-20-21-Proyecto/milestone/12): Tareas relacionadas al desarrollo de pruebas unitarias
 
 ## Los Modelos de las clases a utilizar en el proyecto
