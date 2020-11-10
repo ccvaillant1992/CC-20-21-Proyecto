@@ -13,28 +13,28 @@ La aplicación UniTradicional es una tienda online que vende combos de disfraces
 
 A continuación, las historias de usuario descritas como parte de cada una de las funcionalidades que contendrá la aplicación UniTradicional:
 
-- [Como cliente, necesito poder ver combos disponibles para un evento específico](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/14)
-- [Como cliente, necesito poder visualizar el listado de los eventos disponibles en el sistema](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/15)
-- [Como cliente, necesito poder visualizar los elementos añadidos al carrito de compra](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/16)
-- [Como Administrador de la aplicación, necesito poder añadir un evento nuevo al sistema](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/17)
-- [Como Administrador de la aplicación, necesito añadir un nuevo combo a un evento determinado](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/18)
-- [Como cliente, necesito poder ver el detalle de un combo de disfraz](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/19)
-- [Como cliente, necesito poder filtrar los combos por categoría](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/20)
-- [Como cliente, necesito poder añadir un combo al carrito de compra](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/21)
-- [Como cliente, necesito poder realizar el pago de un combo determinado](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/22)
+- [Como cliente, necesito poder ver combos disponibles para un evento específico](https://github.com/ccvaillant1992/UniTradicional/issues/14)
+- [Como cliente, necesito poder visualizar el listado de los eventos disponibles en el sistema](https://github.com/ccvaillant1992/UniTradicional/issues/15)
+- [Como cliente, necesito poder visualizar los elementos añadidos al carrito de compra](https://github.com/ccvaillant1992/UniTradicional/issues/16)
+- [Como Administrador de la aplicación, necesito poder añadir un evento nuevo al sistema](https://github.com/ccvaillant1992/UniTradicional/issues/17)
+- [Como Administrador de la aplicación, necesito añadir un nuevo combo a un evento determinado](https://github.com/ccvaillant1992/UniTradicional/issues/18)
+- [Como cliente, necesito poder ver el detalle de un combo de disfraz](https://github.com/ccvaillant1992/UniTradicional/issues/19)
+- [Como cliente, necesito poder filtrar los combos por categoría](https://github.com/ccvaillant1992/UniTradicional/issues/20)
+- [Como cliente, necesito poder añadir un combo al carrito de compra](https://github.com/ccvaillant1992/UniTradicional/issues/21)
+- [Como cliente, necesito poder realizar el pago de un combo determinado](https://github.com/ccvaillant1992/UniTradicional/issues/22)
 
 ## Desarrollo y Avance del proyecto en las siguientes fases 
-- [Planificación del Proyecto](https://github.com/ccvaillant1992/CC-20-21-Proyecto/milestone/5)
-- [Diseño de la Arquitectura del Proyecto](https://github.com/ccvaillant1992/CC-20-21-Proyecto/milestone/12)
-- [Desarrollo de Microservicios-Catálogo](https://github.com/ccvaillant1992/CC-20-21-Proyecto/milestone/10)
-- [Desarrollo de Microservicios- Órdenes de compra](https://github.com/ccvaillant1992/CC-20-21-Proyecto/milestone/7)
-- [Desarrollo de Microservicios-Gestión de Pagos](https://github.com/ccvaillant1992/CC-20-21-Proyecto/milestone/11)
-- [Integración de servicios](https://github.com/ccvaillant1992/CC-20-21-Proyecto/milestone/14)
-- [Despliegue de Infraestructura](https://github.com/ccvaillant1992/CC-20-21-Proyecto/milestone/13)
+- [Planificación del Proyecto](https://github.com/ccvaillant1992/UniTradicional/milestone/5)
+- [Diseño de la Arquitectura del Proyecto](https://github.com/ccvaillant1992/UniTradicional/milestone/12)
+- [Desarrollo de Microservicios-Catálogo](https://github.com/ccvaillant1992/UniTradicional/milestone/10)
+- [Desarrollo de Microservicios- Órdenes de compra](https://github.com/ccvaillant1992/UniTradicional/milestone/7)
+- [Desarrollo de Microservicios-Gestión de Pagos](https://github.com/ccvaillant1992/UniTradicional/milestone/11)
+- [Integración de servicios](https://github.com/ccvaillant1992/UniTradicional/milestone/14)
+- [Despliegue de Infraestructura](https://github.com/ccvaillant1992/UniTradicional/milestone/13)
 
 ## Los Modelos de las clases a utilizar en el proyecto
 
-[Evento](https://github.com/ccvaillant1992/CC-20-21-Proyecto/blob/master/UniTradicional/Functions/Models/Evento.cs) :Entidad principal
+[Evento](https://github.com/ccvaillant1992/UniTradicional/blob/master/Functions/Models/Evento.cs) :Entidad principal
 
 - EventId
 - Descripción
@@ -43,7 +43,7 @@ A continuación, las historias de usuario descritas como parte de cada una de la
 - Date 
 - Combos 
 
-[Combo](https://github.com/ccvaillant1992/CC-20-21-Proyecto/blob/master/UniTradicional/Functions/Models/Combo.cs)
+[Combo](https://github.com/ccvaillant1992/UniTradicional/blob/master/Functions/Models/Combo.cs)
 
 - ComboId
 - IdEvento
@@ -55,7 +55,7 @@ A continuación, las historias de usuario descritas como parte de cada una de la
 ## Arquitectura del proyecto
 La Tienda utiliza una arquitectura de microservicios basada en ASP.NET Core. Las solicitudes HTTP de los clientes a la aplicación web de la tienda para que pueden acceder a los microservicios se enrutan a través de una puerta de enlace API, que es una implementación de Backens-For-Frontends. Las puertas de enlace API mejoran la seguridad y desacoplan los servicios backend de los clientes individuales.
 
-[Ver una descripción más detallada de la Arquitectura](https://github.com/ccvaillant1992/CC-20-21-Proyecto/blob/master/docs/ArquitecturaProyecto.md)
+[Ver una descripción más detallada de la Arquitectura](https://github.com/ccvaillant1992/UniTradicional/blob/master/docs/ArquitecturaProyecto.md)
 
 ## Herramientas a emplear
 
@@ -67,7 +67,7 @@ La Tienda utiliza una arquitectura de microservicios basada en ASP.NET Core. Las
 - Infraestructura de nube pública: Microsoft Azure 
 - Gestor de Tareas: Para la automatización y despliegue de los servicios definidos en la arquitectura del proyecto, mediante un pipeline de Azure Devops empleando la sintaxis yaml file y tareas de scripts de powershell y azcli desplegar recursos definidos en ARM(Azure Resource Manager Templates)
 
-[Ver una descripción más detallada de las Herramientas-Avance de funcionalidades en el Proyecto](https://github.com/ccvaillant1992/CC-20-21-Proyecto/blob/master/docs/HerramientasEmpleadas.md)
+[Ver una descripción más detallada de las Herramientas-Avance de funcionalidades en el Proyecto](https://github.com/ccvaillant1992/UniTradicional/blob/master/docs/HerramientasEmpleadas.md)
 
 ## Licencia a utilizar en el proyecto
 
