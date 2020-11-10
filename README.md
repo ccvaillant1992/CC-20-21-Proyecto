@@ -1,6 +1,6 @@
 # UniTradicional  
 
-Este repositorio contiene toda la documentación relacionada a la realización del proyecto de la asignatura Cloud Computing para el despliegue del mismo a través de las diferentes prácticas planteados a lo largo del desarrollo de las mismas. 
+Este repositorio contiene toda la documentación relacionada a la realización del proyecto de la asignatura Cloud Computing para el despliegue del mismo a través de las diferentes prácticas planteadas a lo largo del desarrollo de las mismas. 
 
 ## Acerca del proyecto
 La aplicación UniTradicional es una tienda online que vende combos de disfraces asociados a eventos relacionados con las fiestas de mayor tradición e historia en algún país elegido por el cliente.
@@ -23,12 +23,11 @@ A continuación, las historias de usuario descritas como parte de cada una de la
 - [Como cliente, necesito poder añadir un combo al carrito de compra](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/21)
 - [Como cliente, necesito poder realizar el pago de un combo determinado](https://github.com/ccvaillant1992/CC-20-21-Proyecto/issues/22)
 
-## Para el desarrollo y avance de este Proyecto, a continuación los siguientes Milestones y la breve decripción de lo que abarca cada uno:
-- [UniTradicional Práctica 1](https://github.com/ccvaillant1992/CC-20-21-Proyecto/milestone/5): Tareas relacionadas a la práctica #1 del proyecto
-- [Catálogo](https://github.com/ccvaillant1992/CC-20-21-Proyecto/milestone/10): Tareas relacionadas a la gestión de eventos y combos
-- [Órdenes de compra](https://github.com/ccvaillant1992/CC-20-21-Proyecto/milestone/7): Tareas relacionadas al manejo del carrito de compra
-- [Test](https://github.com/ccvaillant1992/CC-20-21-Proyecto/milestone/12): Tareas relacionadas al desarrollo de pruebas unitarias
-- [Despliegue de Infraestructura](https://github.com/ccvaillant1992/CC-20-21-Proyecto/milestone/13): Tareas Relacionadas al despliegue de la Infraestructura planteada en el proyecto
+## Para el desarrollo y avance de este Proyecto, a continuación los siguientes Hitos 
+- [Planificación del Proyecto](https://github.com/ccvaillant1992/CC-20-21-Proyecto/milestone/5)
+- [Desarrollo de Microservicios](https://github.com/ccvaillant1992/CC-20-21-Proyecto/milestone/10)
+- [Integración de servicios](https://github.com/ccvaillant1992/CC-20-21-Proyecto/milestone/7)
+- [Despliegue de Infraestructura](https://github.com/ccvaillant1992/CC-20-21-Proyecto/milestone/13)
 
 ## Los Modelos de las clases a utilizar en el proyecto
 
@@ -53,7 +52,7 @@ A continuación, las historias de usuario descritas como parte de cada una de la
 ## Arquitectura del proyecto
 La Tienda utiliza una arquitectura de microservicios basada en ASP.NET Core. Las solicitudes HTTP de los clientes a la aplicación web de la tienda para que pueden acceder a los microservicios se enrutan a través de una puerta de enlace API, que es una implementación de Backens-For-Frontends. Las puertas de enlace API mejoran la seguridad y desacoplan los servicios backend de los clientes individuales.
 
-[Descripción más detallada Arquitectura](https://github.com/ccvaillant1992/CC-20-21-Proyecto/blob/master/docs/ArquitecturaProyecto.md)
+[Ver una descripción más detallada de la Arquitectura](https://github.com/ccvaillant1992/CC-20-21-Proyecto/blob/master/docs/ArquitecturaProyecto.md)
 
 ## Herramientas a emplear
 
@@ -63,6 +62,7 @@ La Tienda utiliza una arquitectura de microservicios basada en ASP.NET Core. Las
 - Test: Para el desarrollo basado en test se implementarán distintas pruebas para todos los microservicios usando la herramienta dotnet test and xUnit
 - Servicios: Se usará el servicio de Log Analytics Workspace como centralizador de log de los microservicios.
 - Infraestructura de nube pública: Microsoft Azure 
+- Gestor de Tareas: Para la automatización y despliegue de los servicios definidos en la arquitectura del proyecto, mediante un pipeline de Azure Devops empleando la sintaxis yaml file y tareas de scripts de powershell y azcli desplegar recursos definidos en ARM(Azure Resource Manager Templates)
 
 
 ## Licencia a utilizar en el proyecto
