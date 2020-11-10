@@ -7,8 +7,7 @@ lenguaje:
  - c#
 
 test:
- - UniTradicional/Functions/Models/Evento.cs
  - UniTradicional/Functions.Test/UnitTest1.cs
 
 fichero_tareas:
- - deployResources.ps1
+ - UniTradicional/deployInfrastructure.yml

@@ -9,6 +9,7 @@ using System.Data.SqlClient;
 using System.Threading.Tasks;
 
 
+
 namespace Functions
 {
     public static class Catalogo
@@ -28,6 +29,9 @@ namespace Functions
              string DescriptionEvent = "Carnavales de la Habana";
              DateTime dateEvent = DateTime.Today;
              string PaisEvent = "Cuba";
+
+
+
 
             log.LogInformation($"We will Insert into the Table Combo now");
             await InsertIntoDatabase( NameCombo,  EventId, PrecioCombo,  NameEvento,  DescriptionEvent,  dateEvent, PaisEvent,
