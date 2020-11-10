@@ -1,14 +1,14 @@
 ---
 entidad:
- - /UniTradicional/Functions/Models/Evento.cs
- - /UniTradicional/Functions/Models/Combo.cs
- - /UniTradicional/Functions/Catalogo.cs
+ - CC-20-21-Proyecto/UniTradicional/Functions/Models/Evento.cs
+ - CC-20-21-Proyecto/UniTradicional/Functions/Models/Combo.cs
+ - CC-20-21-Proyecto/UniTradicional/Functions/Catalogo.cs
 
 lenguaje:
  - c#
 
 test:
- - /UniTradicional/Functions.Test/UnitTest1.cs
+ - CC-20-21-Proyecto/UniTradicional/Functions.Test/UnitTest1.cs
 
 fichero_tareas:
- - /UniTradicional/deployInfrastructure.yml
+ - CC-20-21-Proyecto/UniTradicional/deployInfrastructure.yml
