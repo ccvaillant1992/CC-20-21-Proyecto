@@ -30,9 +30,6 @@ namespace Functions
              DateTime dateEvent = DateTime.Today;
              string PaisEvent = "Cuba";
 
-
-
-
             log.LogInformation($"We will Insert into the Table Combo now");
             await InsertIntoDatabase( NameCombo,  EventId, PrecioCombo,  NameEvento,  DescriptionEvent,  dateEvent, PaisEvent,
              log);
