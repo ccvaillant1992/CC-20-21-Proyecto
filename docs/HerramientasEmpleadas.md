@@ -11,8 +11,8 @@
 
 ## Avance Microservicio Catálogo las siguientes HU:
 
-- [Como Administrador de la aplicación, necesito poder añadir un evento nuevo al sistema](https://github.com/ccvaillant1992/CC-20-21-Proyecto/blob/master/UniTradicional/Functions/Catalogo.cs)
-- [Como Administrador de la aplicación, necesito añadir un nuevo combo a un evento determinado](https://github.com/ccvaillant1992/CC-20-21-Proyecto/blob/master/UniTradicional/Functions/Catalogo.cs)
+- [Como Administrador de la aplicación, necesito poder añadir un evento nuevo al sistema](https://github.com/ccvaillant1992/UniTradicional/blob/master/Functions/Catalogo.cs)
+- [Como Administrador de la aplicación, necesito añadir un nuevo combo a un evento determinado](https://github.com/ccvaillant1992/UniTradicional/blob/master/Functions/Catalogo.cs)
 
 ## Marco de pruebas usado
 xUnit.net  es un marco de prueba creado para admitir el desarrollo basado en pruebas, con un objetivo de diseño de extrema simplicidad. Es una herramienta de prueba unitaria gratuita, de código abierto y centrada en la comunidad para .NET.
@@ -21,8 +21,8 @@ xUnit.net  es un marco de prueba creado para admitir el desarrollo basado en pru
 
 ## Tests Unitarios realizados hasta ahora para las historias de usuarios avanzadas:
 
-- [Como Administrador de la aplicación, necesito poder añadir un evento nuevo al sistema](https://github.com/ccvaillant1992/CC-20-21-Proyecto/blob/master/UniTradicional/Functions.Test/UnitTest1.cs)
-- [Como Administrador de la aplicación, necesito añadir un nuevo combo a un evento determinado](https://github.com/ccvaillant1992/CC-20-21-Proyecto/blob/master/UniTradicional/Functions.Test/UnitTest1.cs)
+- [Como Administrador de la aplicación, necesito poder añadir un evento nuevo al sistema](https://github.com/ccvaillant1992/UniTradicional/blob/master/Functions.Test/UnitTest1.cs)
+- [Como Administrador de la aplicación, necesito añadir un nuevo combo a un evento determinado](https://github.com/ccvaillant1992/UniTradicional/blob/master/Functions.Test/UnitTest1.cs)
 
 ## Gestor de tareas
 Azure Pipelines es un servicio en la nube que puede usar para compilar y probar automáticamente su proyecto de código y ponerlo a disposición de otros usuarios. Funciona con casi cualquier idioma o tipo de proyecto. Azure Pipelines combina la integración continua (CI) y la entrega continua (CD) para probar y compilar su código de manera constante y uniforme y enviarlo a cualquier destino.
