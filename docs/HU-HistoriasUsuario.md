@@ -1,5 +1,4 @@
 # Historias de Usuario
-
 - Como cliente, necesito poder ver combos disponibles para un evento específico
 - Como cliente, necesito poder visualizar el listado de los eventos disponibles en el sistema
 - Como cliente, necesito poder visualizar los elementos añadidos al carrito de compra
