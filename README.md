@@ -34,7 +34,7 @@ A continuación, las historias de usuario descritas como parte de cada una de la
 
 ## Los Modelos de las clases a utilizar en el proyecto
 
-[Evento](https://github.com/ccvaillant1992/CC-20-21-Proyecto/blob/master/CatalogoMicroservice/Catalogo/Models/Evento.cs) :Entidad principal
+[Evento](https://github.com/ccvaillant1992/CC-20-21-Proyecto/blob/master/UniTradicional/Functions/Models/Evento.cs) :Entidad principal
 
 - EventId
 - Descripción
@@ -43,7 +43,7 @@ A continuación, las historias de usuario descritas como parte de cada una de la
 - Date 
 - Combos 
 
-[Combo](https://github.com/ccvaillant1992/CC-20-21-Proyecto/blob/master/CatalogoMicroservice/Catalogo/Models/Combo.cs)
+[Combo](https://github.com/ccvaillant1992/CC-20-21-Proyecto/blob/master/UniTradicional/Functions/Models/Combo.cs)
 
 - ComboId
 - IdEvento
