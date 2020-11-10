@@ -1,0 +1,176 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "sqlAdminUsername": {
+            "type": "String"
+        },
+        "sqlAdminPassword": {
+            "type": "String"
+        },
+        "runtime": {
+            "defaultValue": "dotnet",
+            "allowedValues": [
+                "node",
+                "dotnet",
+                "java",
+                "python"
+            ],
+            "type": "String",
+            "metadata": {
+                "description": "The language worker runtime to load in the function app."
+            }
+        },
+        "resourcePrefix": {
+            "type": "String",
+            "metadata": {
+                "description": "The prefix for all the resources"
+            }
+        },
+         "lifecycle": {
+            "type": "string",
+            "allowedValues": [
+                "development",
+                "test",
+                "preprod",
+                "production"
+            ],
+            "defaultValue": "development"
+        },
+         "Platform": {
+            "type": "string",
+            "defaultValue": "development"
+        }
+    },
+    "variables": {
+        "appName": "[concat(parameters('resourcePrefix'),'-funcapp', uniqueString(resourceGroup().id))]",
+        "location": "[resourceGroup().location]",
+        "functionAppName": "[variables('appName')]",
+        "hostingPlanName": "[variables('appName')]",
+        "applicationInsightsName": "[variables('appName')]",
+        "storageAccountName": "[concat(parameters('resourcePrefix'),uniquestring(resourceGroup().id), 'azfunc')]",
+        "functionWorkerRuntime": "[parameters('runtime')]",
+        "insightsLocation": {
+            "AzureCloud": "[resourceGroup().location]"
+        },
+        "serverName" : "[concat(parameters('resourcePrefix'),'-ser', uniqueString(resourceGroup().id))]",
+        "sqlDBName" :  "[concat(parameters('resourcePrefix'),'-db', uniqueString(resourceGroup().id))]",
+         "tags": {
+            "project": " UniTradicional",
+            "platform": "[parameters('Platform')]",
+            "version": "0.1.2",
+            "environment": "[parameters('lifecycle')]"
+
+        }
+        
+    },
+    "resources": [
+        {
+            "type": "Microsoft.Web/sites",
+            "apiVersion": "2019-08-01",
+            "name": "[variables('functionAppName')]",
+            "location": "[variables('location')]",
+            "tags": "[variables('tags')]",
+            "dependsOn": [
+                "[resourceId('Microsoft.Web/serverfarms', variables('hostingPlanName'))]",
+                "[resourceId('Microsoft.Storage/storageAccounts', variables('storageAccountName'))]"
+            ],
+            "kind": "functionapp",
+            "properties": {
+                "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', variables('hostingPlanName'))]",
+                "siteConfig": {
+                    "appSettings": [
+                        {
+                            "name": "AzureWebJobsStorage",
+                            "value": "[concat('DefaultEndpointsProtocol=https;AccountName=', variables('storageAccountName'), ';EndpointSuffix=', environment().suffixes.storage, ';AccountKey=',listKeys(resourceId('Microsoft.Storage/storageAccounts', variables('storageAccountName')), '2019-06-01').keys[0].value)]"
+                        },
+                        {
+                            "name": "WEBSITE_CONTENTAZUREFILECONNECTIONSTRING",
+                            "value": "[concat('DefaultEndpointsProtocol=https;AccountName=', variables('storageAccountName'), ';EndpointSuffix=', environment().suffixes.storage, ';AccountKey=',listKeys(resourceId('Microsoft.Storage/storageAccounts', variables('storageAccountName')), '2019-06-01').keys[0].value)]"
+                        },
+                        {
+                            "name": "WEBSITE_CONTENTSHARE",
+                            "value": "[toLower(variables('functionAppName'))]"
+                        },
+                        {
+                            "name": "FUNCTIONS_EXTENSION_VERSION",
+                            "value": "~2"
+                        },
+                        {
+                            "name": "WEBSITE_NODE_DEFAULT_VERSION",
+                            "value": "~10"
+                        },
+                        {
+                            "name": "APPINSIGHTS_INSTRUMENTATIONKEY",
+                            "value": "[reference(resourceId('microsoft.insights/components', variables('applicationInsightsName')), '2018-05-01-preview').InstrumentationKey]"
+                        },
+                        {
+                            "name": "FUNCTIONS_WORKER_RUNTIME",
+                            "value": "[variables('functionWorkerRuntime')]"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "type": "microsoft.insights/components",
+            "apiVersion": "2018-05-01-preview",
+            "name": "[variables('applicationInsightsName')]",
+            "location": "[variables('insightsLocation')[environment().name]]",
+            "tags": "[variables('tags')]",
+            "properties": {
+                "ApplicationId": "[variables('applicationInsightsName')]",
+                "Request_Source": "IbizaWebAppExtensionCreate"
+            }
+        },
+        {
+            "type": "Microsoft.Sql/servers",
+            "apiVersion": "2020-02-02-preview",
+            "name": "[variables('serverName')]",
+            "location": "[variables('location')]",
+            "tags": "[variables('tags')]",
+            "properties": {
+                "administratorLogin": "[parameters('sqlAdminUsername')]",
+                "administratorLoginPassword": "[parameters('sqlAdminPassword')]"
+            },
+            "resources": [
+                {
+                    "type": "databases",
+                    "apiVersion": "2020-02-02-preview",
+                    "name": "[variables('sqlDBName')]",
+                    "location": "[variables('location')]",
+                    "tags": "[variables('tags')]",
+                    "sku": {
+                        "name": "Standard",
+                        "tier": "Standard"
+                    },
+                    "dependsOn": [
+                        "[resourceId('Microsoft.Sql/servers', concat(variables('serverName')))]"
+                    ]
+                }
+            ]
+        }
+
+        
+    ],
+    "outputs":{ 
+        "sqlConnectionString": {
+            "type": "string",
+            "value": "[concat('Data Source=tcp:', variables('serverName'),'.database.windows.net', ',1433;Initial Catalog=', variables('sqlDBName'),';Persist Security Info=False', ';User ID=', parameters('sqlAdminUsername'),';Password=', parameters('sqlAdminPassword'), ';MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False')]"
+        },
+        "functionName": {
+            "type": "String",
+            "value": "[variables('functionAppName')]"
+        },
+        "serverN": {
+            "type": "String",
+            "value": "[variables('serverName')]"
+        },
+        "sqlDBName": {
+            "type": "string",
+            "value": "[variables('sqlDBName')]"
+        }
+
+    }
+}
+

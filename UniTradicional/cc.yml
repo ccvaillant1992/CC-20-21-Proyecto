@@ -1,0 +1,14 @@
+---
+entidad:
+ - UniTradicional/Functions/Models/Evento.cs
+ - UniTradicional/Functions/Models/Combo.cs
+
+lenguaje:
+ - c#
+
+test:
+ - UniTradicional/Functions/Models/Evento.cs
+ - UniTradicional/Functions.Test/UnitTest1.cs
+
+fichero_tareas:
+ - deployResources.ps1
