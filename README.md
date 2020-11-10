@@ -25,7 +25,10 @@ A continuación, las historias de usuario descritas como parte de cada una de la
 
 ## Para el desarrollo y avance de este Proyecto, a continuación los siguientes Hitos 
 - [Planificación del Proyecto](https://github.com/ccvaillant1992/CC-20-21-Proyecto/milestone/5)
-- [Desarrollo de Microservicios](https://github.com/ccvaillant1992/CC-20-21-Proyecto/milestone/10)
+- [Diseño de la Arquitectura del Proyecto](https://github.com/ccvaillant1992/CC-20-21-Proyecto/milestone/12)
+- [Desarrollo de Microservicios-Catálogo](https://github.com/ccvaillant1992/CC-20-21-Proyecto/milestone/10)
+- [Desarrollo de Microservicios- Órdenes de compra](https://github.com/ccvaillant1992/CC-20-21-Proyecto/milestone/7)
+- [Desarrollo de Microservicios-Gestión de Pagos](https://github.com/ccvaillant1992/CC-20-21-Proyecto/milestone/11)
 - [Integración de servicios](https://github.com/ccvaillant1992/CC-20-21-Proyecto/milestone/7)
 - [Despliegue de Infraestructura](https://github.com/ccvaillant1992/CC-20-21-Proyecto/milestone/13)
 
