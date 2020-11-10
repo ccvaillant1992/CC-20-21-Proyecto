@@ -14,6 +14,10 @@ Esta arquitectura permite que cada microservicio implemente el almacén de datos
 
 Entonces, Con el objetivo de minimizar costes en recursos de infraestructura en la nube, minimizar la complejidad de la aplicación antes propuesta, no emplear arquitecturas genéricas propuestas por tutoriales de Microsoft y innovar en el empleo de servicios en la plataforma de Azure que facilitan el despliegue de aplicaciones de microservicios en la nube; se plantea un nuevo modelo de arquitectura. A continuación, se explica cada uno de los servicios que integrarán y las principales funciones que realizará, así como enlaces de bibliografía que explican con más detalle dichos servicios y como instalarlos y configurarlos. 
 
+Como punto de entrada de solicitudes de los clientes una aplicación web ASP NET Blazor. A través de cada componente de esta aplicación web pages-razor se realizará la comunicación con cada microservicio correspondiente a la solicitud a tramitar. Cada microservicio estará desarrollado con el servicio de computación en la nube Azure Functions, cada una con su almacén de datos correspondiente. para el intercambio de mensajes entre cada microservicio, el servicio Azure Service Bus. Además, como centralizador de logs, el Azure Log Analytics Workspace. 
+
+A continuación más detalle de cada servicio que se plantea en el diseño de la arquitectura del proyecto. 
+
 ## ASP NET Blazor (HTML) 
 Con el objetivo de crear la interfaz de usuario de la tienda UniTradicional. Blazor es una alternativa a MVC, es un marco de aplicación de una sola página (SPA) que simplemente usa C # en lugar de JavaScript. Las aplicaciones Blazor pueden ejecutarse en el servidor o en el navegador gracias a Web Assembly. Emplean la interfaz de usuario como HTML y CSS para una amplia compatibilidad con navegadores. Permiten la integración con plataformas de alojamiento modernas, como Docker.
 
