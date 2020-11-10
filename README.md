@@ -62,8 +62,8 @@ La Tienda utiliza una arquitectura de microservicios basada en ASP.NET Core. Las
 - Lenguajes: Para el desarrollo de los microservicios se empleará lenguage c# y como framework ASP NetCore 3.1
 - Almacenamiento: Para el almacenamiento de los datos en el microservico de catálogo se usuará una base de datos SQL y para el microservicio de orden, la base de datos en memoria redis
 - Comunicación: Los microservicios se comunicarán mediante envío de mensajes empleando el Azure Service Bus.
-- Test: Para el desarrollo basado en test se implementarán distintas pruebas para todos los microservicios usando la herramienta dotnet test and xUnit
-- Servicios: Se usará el servicio de Log Analytics Workspace como centralizador de log de los microservicios.
+- Test: Para el desarrollo basado en test se implementarán distintas pruebas para todos los microservicios usando la herramienta xUnit y ejecutando las mismas mediante el comando `` dotnet test ``
+- Servicios: Se usará el servicio Azure Log Analytics Workspace como centralizador de log de los microservicios.
 - Infraestructura de nube pública: Microsoft Azure 
 - Gestor de Tareas: Para la automatización y despliegue de los servicios definidos en la arquitectura del proyecto, mediante un pipeline de Azure Devops empleando la sintaxis yaml file y tareas de scripts de powershell y azcli desplegar recursos definidos en ARM(Azure Resource Manager Templates)
 
