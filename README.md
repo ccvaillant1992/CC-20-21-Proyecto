@@ -67,6 +67,7 @@ La Tienda utiliza una arquitectura de microservicios basada en ASP.NET Core. Las
 - Infraestructura de nube pública: Microsoft Azure 
 - Gestor de Tareas: Para la automatización y despliegue de los servicios definidos en la arquitectura del proyecto, mediante un pipeline de Azure Devops empleando la sintaxis yaml file y tareas de scripts de powershell y azcli desplegar recursos definidos en ARM(Azure Resource Manager Templates)
 
+[Ver una descripción más detallada de las Herramientas-Avance de funcionalidades en el Proyecto](https://github.com/ccvaillant1992/CC-20-21-Proyecto/blob/master/docs/HerramientasEmpleadas.md)
 
 ## Licencia a utilizar en el proyecto
 
