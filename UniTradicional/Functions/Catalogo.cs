@@ -9,7 +9,6 @@ using System.Data.SqlClient;
 using System.Threading.Tasks;
 
 
-
 namespace Functions
 {
     public static class Catalogo
