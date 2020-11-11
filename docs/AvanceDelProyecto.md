@@ -11,12 +11,19 @@
 
 ## Historias de Usuario:
 
-En cada Historia de Usuario mi planificación hasta el momento. Pueden surgir cambios,  como la realización de cada microservicio constituye para mi un trabajo novedoso, es algo que estoy aprendiendo por el camnino y aún se me escapan detalles.
+En cada Historia de Usuario mi planificación hasta el momento. Pueden surgir cambios, como la realización de cada microservicio constituye para mi un trabajo novedoso, es algo que estoy aprendiendo por el camnino y aún se me escapan detalles.
 
 [HUs](https://github.com/ccvaillant1992/UniTradicional/blob/master/docs/HU-HistoriasUsuario.md)
 
-## Hitos definidos para la realización del Proyecto
-
+## Desarrollo y Avance del proyecto en las siguientes fases 
+- [Planificación del Proyecto](https://github.com/ccvaillant1992/UniTradicional/milestone/5)
+- [Diseño de la Arquitectura del Proyecto](https://github.com/ccvaillant1992/UniTradicional/milestone/12)
+- [Desarrollo de Microservicios-Catálogo](https://github.com/ccvaillant1992/UniTradicional/milestone/10)
+- [Desarrollo de Microservicios- Órdenes de compra](https://github.com/ccvaillant1992/UniTradicional/milestone/7)
+- [Desarrollo de Microservicios-Gestión de Pagos](https://github.com/ccvaillant1992/UniTradicional/milestone/11)
+- [Integración de servicios](https://github.com/ccvaillant1992/UniTradicional/milestone/14)
+- [Despliegue de Infraestructura](https://github.com/ccvaillant1992/UniTradicional/milestone/13)
+- [Documentación](https://github.com/ccvaillant1992/UniTradicional/milestone/15)
 
 ## Revisar la arquitectura de Proyecto:
 
