@@ -53,6 +53,7 @@ A continuación, las historias de usuario descritas como parte de cada una de la
 
 
 ## Arquitectura del proyecto
+
 La Tienda utiliza una arquitectura de microservicios basada en ASP.NET Core. Las solicitudes HTTP de los clientes a la aplicación web de la tienda para que pueden acceder a los microservicios se enrutan a través de una puerta de enlace API, que es una implementación de Backens-For-Frontends. Las puertas de enlace API mejoran la seguridad y desacoplan los servicios backend de los clientes individuales.
 
 [Ver una descripción más detallada de la Arquitectura](https://github.com/ccvaillant1992/UniTradicional/blob/master/docs/ArquitecturaProyecto.md)
@@ -68,6 +69,14 @@ La Tienda utiliza una arquitectura de microservicios basada en ASP.NET Core. Las
 - Gestor de Tareas: Para la automatización y despliegue de los servicios definidos en la arquitectura del proyecto, mediante un pipeline de Azure Devops empleando la sintaxis yaml file y tareas de scripts de powershell y azcli desplegar recursos definidos en ARM(Azure Resource Manager Templates)
 
 [Ver una descripción más detallada de las Herramientas-Avance de funcionalidades en el Proyecto](https://github.com/ccvaillant1992/UniTradicional/blob/master/docs/HerramientasEmpleadas.md)
+
+## Accesso a cada referencia de esta sección:
+
+- R1 Configuración correcta del gestor de tareas y jutificación de la misma
+- R2 Elección y justificación de la biblioteca de aserciones usada
+- R3 Elección y justificación del marco de pruebas usado
+- R4 Correcta relación entre avance de código (incluyendo los test) e HUs
+- R5 Test significativos y/o avance del proyecto en sí más allá de lo básico, incluyendo sugerencias hechas en las correcciones y evaluaciones de hitos anteriores
 
 ## Licencia a utilizar en el proyecto
 
