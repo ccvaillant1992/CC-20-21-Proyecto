@@ -20,5 +20,6 @@ $Parameters.Add("resourcePrefix", $resourcePrefix)
 $Parameters.Add("sqlAdminUsername", $sqlAdminUsername)
 $Parameters.Add("sqlAdminPassword", $sqlAdminPassword)
 
+
 $Deployment = New-AzResourceGroupDeployment  -ResourceGroupName $ResourceGroupName -TemplateFile $TemplateLocation -Mode Incremental -TemplateParameterObject $Parameters -Verbose
 
