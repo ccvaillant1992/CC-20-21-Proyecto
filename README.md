@@ -34,10 +34,10 @@ A continuación, las historias de usuario descritas como parte de cada una de la
 
 ## Estructura del proyecto
 
-[Modelo de clase Evento](https://github.com/ccvaillant1992/UniTradicional/blob/master/Functions/Models/Evento.cs) :Entidad principal
-[Modelo de clase Combo](https://github.com/ccvaillant1992/UniTradicional/blob/master/Functions/Models/Combo.cs)
-[Modelo de clase Catálogo]() : Controladora que contendrá las funciones del Microservicio Catálogo
-[Modelo de clase CatálogoTest]() : Test unitarios que se realizarán a las funciones del Microservicio Catálogo
+- [Modelo de clase Evento](https://github.com/ccvaillant1992/UniTradicional/blob/master/Functions/Models/Evento.cs) :Entidad principal
+- [Modelo de clase Combo](https://github.com/ccvaillant1992/UniTradicional/blob/master/Functions/Models/Combo.cs)
+- [Modelo de clase Catálogo]() : Controladora que contendrá las funciones del Microservicio Catálogo
+- [Modelo de clase CatálogoTest]() : Test unitarios que se realizarán a las funciones del Microservicio Catálogo
 
 ## Arquitectura del proyecto
 
