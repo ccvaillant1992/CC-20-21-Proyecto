@@ -1,4 +1,4 @@
-## Avance Microservicio Catálogo las siguientes HU:
+# Avance Microservicio Catálogo las siguientes HU:
 
 - Como Administrador de la aplicación, necesito poder añadir un evento nuevo al sistema
 - Como Administrador de la aplicación, necesito añadir un nuevo combo a un evento determinad
