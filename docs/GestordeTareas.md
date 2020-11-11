@@ -2,7 +2,7 @@ Para este proyecto, como gestor de tareas he empleado Azure Pipelines.  Este con
 
 He usado para el despliegue automático de tareas mediante la sintaxis YAML el siguiente [pipeline](https://github.com/ccvaillant1992/UniTradicional/blob/master/deployInfrastructure.yml) que despliega las tareas especificadas hasta ahora, apoyandose en este [script](https://github.com/ccvaillant1992/UniTradicional/blob/master/deployResources.ps1) de power shell que a su vez, emplea la [template](https://github.com/ccvaillant1992/UniTradicional/blob/master/resources.json) definida para cada recurso y sus propiedades específicas.
 
-Como características además, Azure Pipelines:
+También, como características que justifican su elección, Azure Pipelines:
 
 - Ayuda a garantizar un código consistente y de calidad que esté disponible para los usuarios.
 - Proporciona una forma rápida, fácil y segura de automatizar la creación de los proyectos y ponerlos a disposición de los usuarios.
