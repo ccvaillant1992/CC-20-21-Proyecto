@@ -8,29 +8,6 @@ La aplicación UniTradicional es una tienda online que vende combos de disfraces
 - Los clientes pueden chequear los detalles de los eventos, seleccionar el combo de disfraz deseado para cada evento y ordenar la compra.
 - Los combos de disfraces son colocados en un carrito de compra y cuando es realizada la compra los usuarios pueden pagar por el combo seleccionado en el carrito.
 
-## Historias de Usuario
-
-A continuación, las historias de usuario descritas como parte de cada una de las funcionalidades que contendrá la aplicación UniTradicional:
-
-- [Como cliente, necesito poder ver combos disponibles para un evento específico](https://github.com/ccvaillant1992/UniTradicional/issues/14)
-- [Como cliente, necesito poder visualizar el listado de los eventos disponibles en el sistema](https://github.com/ccvaillant1992/UniTradicional/issues/15)
-- [Como cliente, necesito poder visualizar los elementos añadidos al carrito de compra](https://github.com/ccvaillant1992/UniTradicional/issues/16)
-- [Como Administrador de la aplicación, necesito poder añadir un evento nuevo al sistema](https://github.com/ccvaillant1992/UniTradicional/issues/17)
-- [Como Administrador de la aplicación, necesito añadir un nuevo combo a un evento determinado](https://github.com/ccvaillant1992/UniTradicional/issues/18)
-- [Como cliente, necesito poder ver el detalle de un combo de disfraz](https://github.com/ccvaillant1992/UniTradicional/issues/19)
-- [Como cliente, necesito poder filtrar los combos por categoría](https://github.com/ccvaillant1992/UniTradicional/issues/20)
-- [Como cliente, necesito poder añadir un combo al carrito de compra](https://github.com/ccvaillant1992/UniTradicional/issues/21)
-- [Como cliente, necesito poder realizar el pago de un combo determinado](https://github.com/ccvaillant1992/UniTradicional/issues/22)
-
-## Desarrollo y Avance del proyecto en las siguientes fases 
-- [Planificación del Proyecto](https://github.com/ccvaillant1992/UniTradicional/milestone/5)
-- [Diseño de la Arquitectura del Proyecto](https://github.com/ccvaillant1992/UniTradicional/milestone/12)
-- [Desarrollo de Microservicios-Catálogo](https://github.com/ccvaillant1992/UniTradicional/milestone/10)
-- [Desarrollo de Microservicios- Órdenes de compra](https://github.com/ccvaillant1992/UniTradicional/milestone/7)
-- [Desarrollo de Microservicios-Gestión de Pagos](https://github.com/ccvaillant1992/UniTradicional/milestone/11)
-- [Integración de servicios](https://github.com/ccvaillant1992/UniTradicional/milestone/14)
-- [Despliegue de Infraestructura](https://github.com/ccvaillant1992/UniTradicional/milestone/13)
-
 ## Estructura del proyecto
 
 - [Modelo de clase Evento](https://github.com/ccvaillant1992/UniTradicional/blob/master/Functions/Models/Evento.cs) :Entidad principal
@@ -59,7 +36,14 @@ La Tienda utiliza una arquitectura de microservicios basada en ASP.NET Core. [Ve
 - R2 [Elección y justificación de la biblioteca de aserciones usada](https://github.com/ccvaillant1992/UniTradicional/blob/master/docs/BibliotecaAsercionesUsada.md)
 - R3 [Elección y justificación del marco de pruebas usado](https://github.com/ccvaillant1992/UniTradicional/blob/master/docs/MarcodePruebaUsado.md)
 - R4 [Correcta relación entre avance de código (incluyendo los test) e HUs](https://github.com/ccvaillant1992/UniTradicional/blob/master/docs/AvanceDelCodigo.md)
-- R5 [Test significativos y/o avance del proyecto en sí más allá de lo básico, incluyendo sugerencias hechas en las correcciones y evaluaciones de hitos anteriores](https://github.com/ccvaillant1992/UniTradicional/blob/master/docs/AvanceDelProyecto.md)
+- R5 [Test significativos y/o avance del proyecto en sí más allá de lo básico, incluyendo sugerencias hechas en las correcciones y evaluaciones anteriores](https://github.com/ccvaillant1992/UniTradicional/blob/master/docs/AvanceDelProyecto.md)
+
+## Cómo ejecutar el proyecto:
+Para la ejecución del proyecto Functions y Functions.Test
+
+´´ dotnet retore ´´
+´´ dotnet run ´´
+
 
 ## Licencia a utilizar en el proyecto
 
