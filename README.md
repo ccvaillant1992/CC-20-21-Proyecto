@@ -56,7 +56,7 @@ La Tienda utiliza una arquitectura de microservicios basada en ASP.NET Core. [Ve
 
 ## Accesso a cada referencia de esta sección:
 
-- R1 [Configuración correcta del gestor de tareas y jutificación de la misma]()
+- R1 [Configuración correcta del gestor de tareas y jutificación de la misma](https://github.com/ccvaillant1992/UniTradicional/blob/master/docs/GestordeTareas.md)
 - R2 [Elección y justificación de la biblioteca de aserciones usada]()
 - R3 [Elección y justificación del marco de pruebas usado]()
 - R4 [Correcta relación entre avance de código (incluyendo los test) e HUs]()
