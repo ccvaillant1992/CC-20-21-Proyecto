@@ -1,4 +1,4 @@
-# Más detalle sobre las herramientas empleadas en el proyecto
+# Avance del proyecto incluyendo correciones realizadas en evaluaciones anteriores
 
 ## Paquetería empleada en el desarrollo del proyecto hasta ahora:
 
