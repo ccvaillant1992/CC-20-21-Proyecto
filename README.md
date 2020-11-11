@@ -1,5 +1,4 @@
 # UniTradicional  
-
 Este repositorio contiene toda la documentación relacionada a la realización del proyecto de la asignatura Cloud Computing para el despliegue del mismo a través de las diferentes prácticas planteadas a lo largo del desarrollo de las mismas. 
 
 ## Acerca del proyecto
