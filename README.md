@@ -41,9 +41,12 @@ La Tienda utiliza una arquitectura de microservicios basada en ASP.NET Core. [Ve
 ## Cómo ejecutar el proyecto:
 Para la ejecución del proyecto Functions y Functions.Test
 
-´´ dotnet retore ´´
-´´ dotnet run ´´
+``` 
+    dotnet retore 
+    
+    dotnet run
 
+```
 
 ## Licencia a utilizar en el proyecto
 
