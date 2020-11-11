@@ -4,7 +4,7 @@ En el estudio que he realizado he apreciado que se pueden usar diferentes tipos 
 
 Un breve resumen de lo aprendido, para posteriormente justificar mi elección.
 
-Tipos de prueba:
+## Tipos de prueba:
 
 - Pruebas unitarias
 
