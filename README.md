@@ -57,9 +57,9 @@ La Tienda utiliza una arquitectura de microservicios basada en ASP.NET Core. [Ve
 ## Accesso a cada referencia de esta sección:
 
 - R1 [Configuración correcta del gestor de tareas y jutificación de la misma](https://github.com/ccvaillant1992/UniTradicional/blob/master/docs/GestordeTareas.md)
-- R2 [Elección y justificación de la biblioteca de aserciones usada]()
-- R3 [Elección y justificación del marco de pruebas usado]()
-- R4 [Correcta relación entre avance de código (incluyendo los test) e HUs]()
+- R2 [Elección y justificación de la biblioteca de aserciones usada](https://github.com/ccvaillant1992/UniTradicional/blob/master/docs/BibliotecaAsercionesUsada.md)
+- R3 [Elección y justificación del marco de pruebas usado](https://github.com/ccvaillant1992/UniTradicional/blob/master/docs/MarcodePruebaUsado.md)
+- R4 [Correcta relación entre avance de código (incluyendo los test) e HUs](https://github.com/ccvaillant1992/UniTradicional/blob/master/docs/HerramientasEmpleadas.md)
 - R5 [Test significativos y/o avance del proyecto en sí más allá de lo básico, incluyendo sugerencias hechas en las correcciones y evaluaciones de hitos anteriores]()
 
 ## Licencia a utilizar en el proyecto
