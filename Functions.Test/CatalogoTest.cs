@@ -2,7 +2,6 @@ using System;
 using Xunit;
 
 
-
 namespace Functions.Test
 {
  
