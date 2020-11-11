@@ -1,6 +1,6 @@
 # Más detalle sobre las herramientas empleadas en el proyecto
 
-## Paquetería empleada en el proyecto hasta ahora:
+## Paquetería empleada en el desarrollo del proyecto hasta ahora:
 
 - System.Data.SqlClient: Proporciona el proveedor de datos para SQL Server. Estas clases brindan acceso a versiones de SQL Server y encapsulan protocolos específicos de la base de datos, incluido el flujo de datos tabulares (TDS)
 - Microsoft.Extensions.Logging: Implementación predeterminada de la infraestructura de registro para Microsoft.Extensions.Logging.
@@ -9,16 +9,18 @@
 - Microsoft.AspNetCore.Http
 - Microsoft.AspNetCore.Mvc: ASP.NET Core MVC is a web framework that gives you a powerful, patterns-based way to build dynamic websites and web APIs. ASP.NET Core MVC enables a clean separation of concerns and gives you full control over markup.
 
-## Avance Microservicio Catálogo las siguientes HU:
+## Historias de Usuario:
 
-- [Como Administrador de la aplicación, necesito poder añadir un evento nuevo al sistema](https://github.com/ccvaillant1992/UniTradicional/blob/master/Functions/Catalogo.cs)
-- [Como Administrador de la aplicación, necesito añadir un nuevo combo a un evento determinado](https://github.com/ccvaillant1992/UniTradicional/blob/master/Functions/Catalogo.cs)
+En cada Historia de Usuario mi planificación hasta el momento. Pueden surgir cambios,  como la realización de cada microservicio constituye para mi un trabajo novedoso, es algo que estoy aprendiendo por el camnino y aún se me escapan detalles.
 
+[HUs](https://github.com/ccvaillant1992/UniTradicional/blob/master/docs/HU-HistoriasUsuario.md)
 
-## Tests Unitarios realizados hasta ahora para las historias de usuarios avanzadas:
-
-- [Como Administrador de la aplicación, necesito poder añadir un evento nuevo al sistema](https://github.com/ccvaillant1992/UniTradicional/blob/master/Functions.Test/UnitTest1.cs)
-- [Como Administrador de la aplicación, necesito añadir un nuevo combo a un evento determinado](https://github.com/ccvaillant1992/UniTradicional/blob/master/Functions.Test/UnitTest1.cs)
+## Hitos definidos para la realización del Proyecto
 
 
+## Revisar la arquitectura de Proyecto:
+
+Explico cada servicio que se empleará en la realización del proyecto, la documentación referente a cada uno. 
+
+- [Arquitectura](https://github.com/ccvaillant1992/UniTradicional/blob/master/docs/ArquitecturaProyecto.md)
 
