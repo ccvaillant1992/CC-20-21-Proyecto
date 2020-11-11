@@ -8,7 +8,7 @@ lenguaje:
  - c#
 
 test:
- - Functions.Test/UnitTest1.cs
+ - Functions.Test/CatalogoTest.cs
 
 fichero_tareas:
  - deployInfrastructure.yml
