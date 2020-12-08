@@ -18,32 +18,28 @@ namespace Functions
 
         [FunctionName("CatalogoFunction")]
         public static async Task<IActionResult> RunAsync(
-            [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = "todo1")] HttpRequest req,
+            [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = "Catalog")] HttpRequest req,
             ILogger log)
         {
+            //Temporarily because these data will send through the web app in a JSON file
+            int EventId = 0;
+            string NameCombo = "mycomboTest";
+            int PrecioCombo = 10;
+            var Category = CurrentCategory.hombre; 
+            string NameEvento = "Carnavales de la Habana"; 
+            string DescriptionEvent = "Carnavales de la Habana";
+            DateTime dateEvent = DateTime.Today;
+            string PaisEvent = "Cuba";
 
-             string NameCombo = "mycomboTest";
-             int PrecioCombo = 10;
-             int EventId = 1;
-             string NameEvento = "Carnavales de la Habana"; 
-             string DescriptionEvent = "Carnavales de la Habana";
-             DateTime dateEvent = DateTime.Today;
-             string PaisEvent = "Cuba";
-
-
-
-
-            log.LogInformation($"We will Insert into the Table Combo now");
-            await InsertIntoDatabase( NameCombo,  EventId, PrecioCombo,  NameEvento,  DescriptionEvent,  dateEvent, PaisEvent,
-             log);
-
+            log.LogInformation($"We call the Insert method into the Database now");
+            await InsertIntoDatabase( NameCombo,  EventId, PrecioCombo,  Category, NameEvento,  DescriptionEvent,  dateEvent, PaisEvent, log);
             string var = "You are managing the catalog ";
             return new OkObjectResult(var);
 
-        }    // Get the connection string from app settings and use it to create a connection.
+        }    
 
         public static async Task<IActionResult> InsertIntoDatabase(
-            string NameCombo, int EventId, int PrecioCombo, string NameEvento, string DescriptionEvent, DateTime dateEvent, string PaisEvent,
+            string NameCombo, int EventId, int PrecioCombo, CurrentCategory Category, string NameEvento, string DescriptionEvent, DateTime dateEvent, string PaisEvent,
             ILogger log)
         {
 
@@ -53,15 +49,19 @@ namespace Functions
             bool result= await CheckEventoExistIntoDatabaseWorker(str, EventId);
             if (result)
             {
-                await InsertComboIntoDatabaseWorker(str, NameCombo, EventId, PrecioCombo);
+                await InsertComboIntoDatabaseWorker(str, NameCombo, EventId, PrecioCombo, Category);
+            }
+            else
+            {
+                throw new ArgumentException($"Invalid{nameof(EventId)}");
             }
 
 
-            string var = "You recently added one combo";
+            string var = "You recently insert into the database";
             return new OkObjectResult(var);
         }
 
-        public static async Task<int> InsertComboIntoDatabaseWorker(string conn_str,  string Name, int EventId, int Precio)
+        public static async Task<int> InsertComboIntoDatabaseWorker(string conn_str,  string Name, int EventId, int Precio, CurrentCategory category)
         {
             using (SqlConnection conn = new SqlConnection(conn_str))
             {
@@ -75,7 +75,7 @@ namespace Functions
                     cmd.Parameters.AddWithValue("@EventId", EventId);
                     cmd.Parameters.AddWithValue("@Name", Name);
                     cmd.Parameters.AddWithValue("@Precio", Precio);
-                    cmd.Parameters.AddWithValue("@category", Combo.CurrentCategory.hombre);
+                    cmd.Parameters.AddWithValue("@category", category);
                     // Execute the command and log the # rows affected.
                     var rows = await cmd.ExecuteNonQueryAsync();
                     conn.Close();
@@ -83,6 +83,7 @@ namespace Functions
                 }
 
             }
+          
         }
 
         public static async Task<int> InsertEventoIntoDatabaseWorker(string conn_str, string NameEvento, string DescriptionEvent, DateTime dateEvent, string PaisEvent)

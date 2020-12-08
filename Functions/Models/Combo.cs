@@ -4,13 +4,19 @@
 
 namespace Functions.Models
 {
+    public enum CurrentCategory
+    {
+        niño = 1,
+        mujer = 2,
+        hombre = 3
+    };
     public class Combo
     {
         private int _ComboId;
         private int _EventId;
         private string _Name; 
         private int _Precio;
-        private CurrentCategory _Category;
+        private CurrentCategory category;
 
 
         public Combo(string _Name, int _Event_Id, int _Precio, CurrentCategory _Category) { }
@@ -37,18 +43,11 @@ namespace Functions.Models
          set { Precio = value; }
      }
 
-        public CurrentCategory Category
-        {
-            get { return Category; }
-            set { Category = value; }
-        }
-
-        public enum CurrentCategory
-        {
-            niño,
-            mujer,
-            hombre
-        };
+     public CurrentCategory Category
+     {
+         get { return Category; }
+         set { Category = value; }
+     }
 
     }
   
