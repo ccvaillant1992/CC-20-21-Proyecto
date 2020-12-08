@@ -29,7 +29,7 @@ stages:
       - task: AzurePowerShell@5
         displayName: 'Deploy platform'
         inputs:
-          azureSubscription: 'Visual Studio Enterprise – MPN(6653b607-d7c2-446d-88b9-c7d7b05669df)'
+          azureSubscription: ''
           ScriptPath: 'deployResources.ps1' 
           ScriptArguments: '-resourceGroupName $(resourceGroupName) -sqlAdminUsername $(sqlAdminUsername) -sqlAdminPassword $(sqlAdminPassword)  -prefix $(prefix) '
           azurePowerShellVersion: LatestVersion
@@ -76,7 +76,7 @@ stages:
       - task: SqlAzureDacpacDeployment@1
         displayName: 'Azure SQL deploy database'
         inputs:
-          azureSubscription: 'Visual Studio Enterprise – MPN(6653b607-d7c2-446d-88b9-c7d7b05669df)'
+          azureSubscription: ''
           serverName: $(serverName)
           databaseName: $(sqlDBName)
           dacpacFile: '$(Pipeline.Workspace)/_uniTradicionalDatabase/CatalogDatabase.dacpac'
@@ -119,7 +119,7 @@ stages:
       - task: AzureFunctionApp@1
         displayName: 'Azure Function App Deploy'
         inputs:
-           azureSubscription: 'Visual Studio Enterprise – MPN(6653b607-d7c2-446d-88b9-c7d7b05669df)'
+           azureSubscription: ''
            appType: functionApp
            appName: "$(functionName)"
            package: '$(Build.ArtifactStagingDirectory)/**/*.zip'
