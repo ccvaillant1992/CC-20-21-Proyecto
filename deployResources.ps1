@@ -20,7 +20,7 @@ $Parameters.Add("prefix", $prefix)
 $Parameters.Add("sqlAdminUsername", $sqlAdminUsername)
 $Parameters.Add("sqlAdminPassword", $sqlAdminPassword)
 
-#$Deployment = New-AzResourceGroupDeployment -Name "nhg-resources-$((Get-Date).ToString('yyyy-MM-dd_HH-mm'))"  -ResourceGroupName $ResourceGroupName  -TemplateFile $TemplateLocation -Mode Incremental -TemplateParameterObject $Parameters -Verbose
+
 $Deployment = New-AzResourceGroupDeployment  -resourceGroupName $resourceGroupName -TemplateFile $TemplateLocation -Mode Incremental -TemplateParameterObject $Parameters -Verbose
 
 #Saving outputs variables from ARM template
