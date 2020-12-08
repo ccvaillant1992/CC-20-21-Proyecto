@@ -1,6 +1,6 @@
 param (
-    [Parameter(Mandatory = $true)] [string] $ResourceGroupName,
-    [Parameter(Mandatory = $false)] [string] $resourcePrefix,
+    [Parameter(Mandatory = $true)] [string] $resourceGroupName,
+    [Parameter(Mandatory = $false)] [string] $prefix,
     [Parameter(Mandatory = $false)] [string] $sqlAdminUsername,
     [Parameter(Mandatory = $false)] [string] $sqlAdminPassword
 )
@@ -16,10 +16,14 @@ if($null -eq $TemplateLocation) {
 
 # Set of parameters for ARM template. 
 $Parameters = @{ } #hashtable = collection of name-value pairs
-$Parameters.Add("resourcePrefix", $resourcePrefix)
+$Parameters.Add("prefix", $prefix)
 $Parameters.Add("sqlAdminUsername", $sqlAdminUsername)
 $Parameters.Add("sqlAdminPassword", $sqlAdminPassword)
 
+#$Deployment = New-AzResourceGroupDeployment -Name "nhg-resources-$((Get-Date).ToString('yyyy-MM-dd_HH-mm'))"  -ResourceGroupName $ResourceGroupName  -TemplateFile $TemplateLocation -Mode Incremental -TemplateParameterObject $Parameters -Verbose
+$Deployment = New-AzResourceGroupDeployment  -resourceGroupName $resourceGroupName -TemplateFile $TemplateLocation -Mode Incremental -TemplateParameterObject $Parameters -Verbose
 
-$Deployment = New-AzResourceGroupDeployment  -ResourceGroupName $ResourceGroupName -TemplateFile $TemplateLocation -Mode Incremental -TemplateParameterObject $Parameters -Verbose
-
+#Saving outputs variables from ARM template
+Write-Host "##vso[task.setvariable variable=serverName]$($Deployment.Outputs["serverName"].Value)"
+Write-Host "##vso[task.setvariable variable=sqlDBName]$($Deployment.Outputs["sqlDBName"].Value)"
+Write-Host "##vso[task.setvariable variable=functionName]$($Deployment.Outputs["functionName"].Value)"
