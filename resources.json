@@ -1,5 +1,5 @@
 {
-   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
         "sqlAdminUsername": {
@@ -7,6 +7,18 @@
         },
         "sqlAdminPassword": {
             "type": "String"
+        },
+        "storageAccountType": {
+            "defaultValue": "Standard_LRS",
+            "allowedValues": [
+                "Standard_LRS",
+                "Standard_GRS",
+                "Standard_RAGRS"
+            ],
+            "type": "String",
+            "metadata": {
+                "description": "Storage Account type"
+            }
         },
         "runtime": {
             "defaultValue": "dotnet",
@@ -21,7 +33,7 @@
                 "description": "The language worker runtime to load in the function app."
             }
         },
-        "resourcePrefix": {
+        "prefix": {
             "type": "String",
             "metadata": {
                 "description": "The prefix for all the resources"
@@ -43,18 +55,18 @@
         }
     },
     "variables": {
-        "appName": "[concat(parameters('resourcePrefix'),'-funcapp', uniqueString(resourceGroup().id))]",
+        "appName": "[concat(parameters('prefix'),'-funcapp', uniqueString(resourceGroup().id))]",
         "location": "[resourceGroup().location]",
         "functionAppName": "[variables('appName')]",
         "hostingPlanName": "[variables('appName')]",
         "applicationInsightsName": "[variables('appName')]",
-        "storageAccountName": "[concat(parameters('resourcePrefix'),uniquestring(resourceGroup().id), 'azfunc')]",
+        "storageAccountName": "[concat(parameters('prefix'),uniquestring(resourceGroup().id), 'azfunc')]",
         "functionWorkerRuntime": "[parameters('runtime')]",
         "insightsLocation": {
             "AzureCloud": "[resourceGroup().location]"
         },
-        "serverName" : "[concat(parameters('resourcePrefix'),'-ser', uniqueString(resourceGroup().id))]",
-        "sqlDBName" :  "[concat(parameters('resourcePrefix'),'-db', uniqueString(resourceGroup().id))]",
+        "serverName" : "[concat(parameters('prefix'),'-ser', uniqueString(resourceGroup().id))]",
+        "sqlDBName" :  "[concat(parameters('prefix'),'-db', uniqueString(resourceGroup().id))]",
          "tags": {
             "project": " UniTradicional",
             "platform": "[parameters('Platform')]",
@@ -65,6 +77,33 @@
         
     },
     "resources": [
+         {
+            "type": "Microsoft.Storage/storageAccounts",
+            "apiVersion": "2019-06-01",
+            "name": "[variables('storageAccountName')]",
+            "location": "[variables('location')]",
+            "tags": "[variables('tags')]",
+            "sku": {
+                "name": "[parameters('storageAccountType')]"
+            },
+            "kind": "Storage"
+
+        },
+        {
+            "type": "Microsoft.Web/serverfarms",
+            "apiVersion": "2019-08-01",
+            "name": "[variables('hostingPlanName')]",
+            "location": "[variables('location')]",
+            "tags": "[variables('tags')]",
+            "sku": {
+                "name": "Y1",
+                "tier": "Dynamic"
+            },
+            "properties": {
+                "name": "[variables('hostingPlanName')]",
+                "computeMode": "Dynamic"
+            }
+        },
         {
             "type": "Microsoft.Web/sites",
             "apiVersion": "2019-08-01",
@@ -162,9 +201,9 @@
             "type": "String",
             "value": "[variables('functionAppName')]"
         },
-        "serverN": {
+        "serverName": {
             "type": "String",
-            "value": "[variables('serverName')]"
+            "value": "[concat(variables('serverName'),'.database.windows.net')]"
         },
         "sqlDBName": {
             "type": "string",
