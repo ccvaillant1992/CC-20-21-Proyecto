@@ -16,5 +16,13 @@ La siguiente clase controladora, es una azure function HTTP Triguer, contiene el
 
 - [CatalogoTests](https://github.com/ccvaillant1992/UniTradicional/blob/master/Functions.Test/CatalogoTests.cs)
 
+## Paquetería empleada en el desarrollo del proyecto hasta ahora:
+- System.Collections.Generic: para la manipulación de la lista definida en el modelo de clase Evento. 
+- System.Data.SqlClient: Proporciona el proveedor de datos para SQL Server para el manejo con la base de datos sqlserver del microservicio Catálogo
+- Microsoft.Extensions.Logging: Implementa la infraestructura de registro que emplea la azure function para registrar los logs de la aplicación. Ayuda la trazabilidad del código. 
+- Microsoft.Azure.WebJobs: Este paquete contiene los ensamblados en tiempo de ejecución. También agrega capacidades de diagnóstico completas que facilitan el monitoreo de WebJobs.
+- System.Threading.Tasks: Simplifican el trabajo de escribir código concurrente y asincrónico.
+- Microsoft.AspNetCore: framework empleado mediante la azure function para construir sitios web y APIs web 
+- Newtonsoft.Json: framework JSON para el manejo de archivos en formato json
 
 
