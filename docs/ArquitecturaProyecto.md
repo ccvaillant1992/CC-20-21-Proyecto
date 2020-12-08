@@ -1,6 +1,6 @@
 # Arquitectura del proyecto
 
-La Tienda utiliza una arquitectura basada en ASP.NET Core microservicios. Las solicitudes HTTP de los clientes a la aplicación web de la tienda para que puedan acceder a los microservicios se enrutan a través de una puerta de enlace API, que es una implementación de Backens-For-Frontends. Las puertas de enlace API mejoran la seguridad y desacoplan los servicios backend de los clientes individuales. 
+La Tienda utiliza una arquitectura basada en microservicios ASP.NET Core. Las solicitudes HTTP de los clientes a la aplicación web de la tienda para que puedan acceder a los microservicios se enrutan a través de una puerta de enlace API, que es una implementación de Backens-For-Frontends. Las puertas de enlace API mejoran la seguridad y desacoplan los servicios backend de los clientes individuales. 
 
 ## Las piezas de funcionalidad como parte de la aplicación son:
 
@@ -12,7 +12,7 @@ Cada una de las características anteriores se administra con un microservicio d
 
 ## Descripción de los servicios que integrará la aplicación y las principales funciones que realizará cada uno:
 
-Como punto de entrada para recibir y responder las solicitudes de los clientes, una aplicación web ASP NET Blazor. Esta es una alternativa a MVC. A través de cada componente de esta aplicación web pages-razor se realizará la comunicación mediante una API Gateway como punto intermedio de seguridad, con cada microservicio correspondiente a la solicitud a tramitar. Cada microservicio estará desarrollado con el servicio de computación en la nube Azure Functions, cada una con su almacén de datos correspondiente. Para la transferencia asincrónica de datos e intercambio de mensajes en UniTradicional, el servicio Azure Service Bus. Además, como centralizador de logs, Azure Log Analytics Workspace, con el objetivo de registrar mensajes generados por cada componente que integra la arquitectura de la Tienda UniTradicional y obtener información de seguimiento detallada sobre fallos en los servicios.
+Como punto de entrada para recibir y responder las solicitudes de los clientes, una aplicación web ASP NET Blazor. Esta es una alternativa a MVC. A través de cada componente de esta aplicación web pages-razor, se realizará la comunicación mediante una API Gateway como punto intermedio de seguridad con cada microservicio correspondiente a la solicitud a tramitar. Cada microservicio estará desarrollado con el servicio de computación en la nube Azure Functions, cada una con su almacén de datos correspondiente. Para la transferencia asincrónica de datos e intercambio de mensajes en UniTradicional, el servicio Azure Service Bus. Además, como centralizador de logs, Azure Log Analytics Workspace, con el objetivo de registrar mensajes generados por cada componente que integra la arquitectura de la Tienda UniTradicional y obtener información de seguimiento detallada sobre fallos en los servicios.
 
 ## Entre los requerimientos no funcionales que justifican por qué la elección de esta arquitectura basada en microservicios:
 
