@@ -1,0 +1,131 @@
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  resourceGroupName: "UniTradicionalProject"
+  prefix: "u"
+  sqlAdminUsername: ""
+  sqlAdminPassword: ""
+  buildConfiguration: 'Release'
+  databasenName: 'CatalogDatabase'
+
+resources:
+  repositories:
+  - repository: UniTradicional
+    type: git
+    name: UniTradicional
+    ref: master
+  
+stages:
+  - stage: Build
+    displayName: Build 
+    jobs: 
+    - job: 'UniTradicionalBuild'
+      displayName: unitradicional-build
+      
+      steps:
+      - checkout: UniTradicional
+
+      - task: AzurePowerShell@5
+        displayName: 'Deploy platform'
+        inputs:
+          azureSubscription: 'Visual Studio Enterprise – MPN(6653b607-d7c2-446d-88b9-c7d7b05669df)'
+          ScriptPath: 'deployResources.ps1' 
+          ScriptArguments: '-resourceGroupName $(resourceGroupName) -sqlAdminUsername $(sqlAdminUsername) -sqlAdminPassword $(sqlAdminPassword)  -prefix $(prefix) '
+          azurePowerShellVersion: LatestVersion
+        enabled: true
+
+      
+      - task: NuGetToolInstaller@0
+        displayName: 'Use NuGet 4.4.1'
+        inputs:
+          versionSpec: 4.4.1
+
+      - task: NuGetCommand@2
+        displayName: 'NuGet restore'
+        inputs:
+          restoreSolution: '$(databasenName)/*.sln'
+
+      - task: VSBuild@1
+        displayName: 'Build solution'
+        inputs:
+          solution: '$(databasenName)/*.sln'
+          platform: 'any cpu'
+          configuration: 'Release'
+
+      - task: PublishSymbols@2
+        displayName: 'Publish solution'
+        inputs:
+          SearchPattern: '**\bin\**\*.pdb'
+          PublishSymbols: false
+        continueOnError: true
+
+      - task: PublishPipelineArtifact@1
+        inputs:
+          targetPath: '$(databasenName)/bin/Release/'
+          artifact: '_uniTradicionalDatabase'
+          publishLocation: 'pipeline'
+
+      - task: DownloadPipelineArtifact@2
+        inputs:
+          buildType: 'current'
+          artifactName: '_uniTradicionalDatabase'
+          targetPath: '$(Pipeline.Workspace)/_uniTradicionalDatabase/'
+        displayName: Download uniTradicional database artifact         
+
+      - task: SqlAzureDacpacDeployment@1
+        displayName: 'Azure SQL deploy database'
+        inputs:
+          azureSubscription: 'Visual Studio Enterprise – MPN(6653b607-d7c2-446d-88b9-c7d7b05669df)'
+          serverName: $(serverName)
+          databaseName: $(sqlDBName)
+          dacpacFile: '$(Pipeline.Workspace)/_uniTradicionalDatabase/CatalogDatabase.dacpac'
+          sqlUsername: $(sqlAdminUsername)
+          sqlPassword: $(sqlAdminPassword)
+            
+      - task: DotNetCoreCLI@2
+        displayName: 'Restore dependencies'
+        inputs:
+          command: 'restore'
+          projects: 'Functions/*.csproj'
+
+      - task: DotNetCoreCLI@2
+        displayName: 'Build Function project'
+        inputs:
+          command: 'build'
+          projects: 'Functions/*.csproj'
+          arguments: '--configuration $(BuildConfiguration)'
+
+      - task: DotNetCoreCLI@2
+        displayName: 'Test Function project'
+        inputs:
+          command: 'test'
+          projects: 'Functions.Test/*.csproj'
+          arguments: '--configuration $(BuildConfiguration)'
+
+      - task: DotNetCoreCLI@2
+        displayName: 'Publish and zip'
+        inputs:
+          command: 'publish'
+          publishWebProjects: false
+          projects: 'Functions/Functions.csproj'
+          arguments: ' --configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)/FunctionUniTradicional --no-build'
+          zipAfterPublish: true
+          modifyOutputPath: false
+          
+      - publish: '$(Build.ArtifactStagingDirectory)/FunctionUniTradicional'
+        artifact: 'uniTradicional.function.$(Build.BuildNumber)'
+      
+      - task: AzureFunctionApp@1
+        displayName: 'Azure Function App Deploy'
+        inputs:
+           azureSubscription: 'Visual Studio Enterprise – MPN(6653b607-d7c2-446d-88b9-c7d7b05669df)'
+           appType: functionApp
+           appName: "$(functionName)"
+           package: '$(Build.ArtifactStagingDirectory)/**/*.zip'
+
+
+      
+     
+     
+
