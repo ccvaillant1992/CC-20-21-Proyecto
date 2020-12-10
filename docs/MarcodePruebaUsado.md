@@ -25,7 +25,8 @@ xUnit
 
 Ahora una comparación básica con los 3 marcos de prueba vistos anteriormente
 
-|Criterio |MSTest |NUnit |xUniT|Comentarios|
+| Criterio | MSTest | NUnit |xUniT | Comentarios|
+|----------|--------|-------|------|------------|
 |Atributos que emplea para marcar el método de prueba|[TestMethod]|[Test]|[Fact]|-|
 |API para probar el método |Assert.AreEqual|Assert.AreEqual|Assert.Equal|Misma API para probar el método implementado, varía el método empleado por la clase Assert.|
 |Constructor|-|[SetUp]|-|NUnit define de manera predeterminada un constructor, en los restantes marcos los pudiera definir, pero no es obligatorio.|
